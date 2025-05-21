@@ -21,7 +21,7 @@ public class LauncWindow {
       
     	dc = new Driverclass();
     	dc.DriverManager(weburl);
-       System.out.println("JAVA");
+      
     	
     }
 

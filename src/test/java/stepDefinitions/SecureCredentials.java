@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import PageObjects.LoginPage;
 import io.cucumber.java.en.And;
 import utils.DriverManager;
 

@@ -73,12 +73,12 @@ public class SecureCredentials {
 	           driver = DriverManager.getDriver();
 	           Object pageObject = constructor.newInstance(driver);
 
-	           //  Field (textbox locator) ను తీసుకుంటుంది
+
 	           //getDeclaredField :-This is a method of retrieving a single field (instance variable) in a class by its name.
 	           Field field = cl.getDeclaredField(textboxFieldName); 
 	           field.setAccessible(true); // private field access
 
-	           By locator = (By) field.get(pageObject); // Field నుండి By లొకేటర్ తీసుకోవడం
+	           By locator = (By) field.get(pageObject);
 
 	           // Use WebDriver to interact with the element
 	           

@@ -36,11 +36,19 @@
       <version>7.22.1</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
-    <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-picocontainer</artifactId>
-      <version>7.22.1</version>
-    </dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+  <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-picocontainer</artifactId>
+    <version>7.22.2</version>
+  </dependency>
+
+<!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
+<dependency>
+    <groupId>com.codeborne</groupId>
+    <artifactId>selenide</artifactId>
+    <version>7.9.2</version>
+</dependency>
 
 
     <dependency>

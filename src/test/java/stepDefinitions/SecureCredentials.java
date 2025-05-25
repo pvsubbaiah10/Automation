@@ -14,7 +14,7 @@ import utils.DriverManager;
 public class SecureCredentials {
 	
 	WebDriver driver;
-	LoginPage Lp;
+	//LoginPage Lp;
 		   	   
 //	   @And("the user enters UserName {string} into the User textbox at the LoginPage page")
 //	   public void Enter_UserName(String UserName) {

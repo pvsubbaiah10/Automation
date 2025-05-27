@@ -2,13 +2,12 @@ package stepDefinitions;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.And;
 import utils.LoadProperties;
 
 public class UserLoginPage {
 	
-	static WebDriver driver;
+	
 	   	   
 	   @And("^the user enters UserName \"([^\"]*)\" into the \"([^\"]*)\" textbox at the \"([^\"]*)\" page$")
 	   public void Enter_UserName(String username, String textboxFieldName, String pageClassName) throws IOException {

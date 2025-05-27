@@ -16,11 +16,32 @@ public class UserLoginPage {
 	static WebDriver driver;
 	   	   
 	   @And("^the user enters UserName \"([^\"]*)\" into the \"([^\"]*)\" textbox at the \"([^\"]*)\" page$")
-	   public void Enter_UserNmae(String value, String textboxFieldName, String pageClassName) {
+	   public void Enter_UserName(String username, String textboxFieldName, String pageClassName) {
 		   
-	   LoadProperties.pageClass_LoadPage(value, textboxFieldName, pageClassName);
+	   LoadProperties.pageClass_LoadPage(username, textboxFieldName, pageClassName);
 	   
 	   }  
     
+	   
+	   
+	   
+	   @And("^the user enters Password \"([^\"]*)\" into the \"([^\"]*)\" textbox at the \"([^\"]*)\" page$")
+	   public void Enter_Password(String password, String textboxFieldName, String pageClassName) {
+	   
+		   LoadProperties.pageClass_LoadPage(password, textboxFieldName, pageClassName);
+		   
+	   }
+	      
+
+	   @And("^the user clicks the \"([^\"]*)\" element at the \"([^\"]*)\" page$")
+	   public void Click_button(String button, String pageClassName) {
+	   
+		    LoadProperties.pageClass_button(button, pageClassName);
+		   
+		   
+		   
+	   }
+	     
+	   
 
 }

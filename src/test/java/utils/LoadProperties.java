@@ -7,6 +7,8 @@ import java.lang.reflect.Field;
 import java.util.Properties;
 import java.util.Set;
 
+import javax.management.RuntimeErrorException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -63,10 +65,35 @@ public class LoadProperties {
 	       } catch (Exception e) {
 	           throw new RuntimeException("Error: " + e.getMessage(), e);
 	       }
+	 }
+	
+	
+	public static void pageClass_button(String button, String pageClassName) {
+		
+		try {
+			String ClassName = "PageObjects." + pageClassName;
+			
+			Class<?> cl = Class.forName(ClassName);
+			
+			Constructor<?> constructor = cl.getConstructor(WebDriver.class);
+			Object pageObject = constructor.newInstance(driver);
+			
+			Field field = cl.getDeclaredField(button);
+			field.setAccessible(true);
+			
+			By locator = (By) field.get(pageObject);
+			
+			WebElement element = driver.findElement(locator);
+			element.click();
+			
+			
+			
+		}catch (Exception e) {
+			throw new RuntimeException("Error: " + e.getMessage(), e);
+		}
+		
 		
 	}
-	
-	
 	
 	
 

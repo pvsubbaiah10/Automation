@@ -53,35 +53,18 @@ public class SecureCredentials {
 	   
 	   @And("^the user enters UserName \"([^\"]*)\" into the \"([^\"]*)\" textbox at the \"([^\"]*)\" page$")
 	   public void enterUserNameByLocator(String value, String textboxFieldName, String pageClassName) {
-	       try {
-	           
-	    	   // taking class name from feature file and store into string.
+	       try {	          	    	  
 	           String ClassName = "PageObjects." + pageClassName;
 
-	           
-	           // “Class<?> A reference to a Class object of any type.” The <?>  it is a place-holder ,called wildcard generic technic, and it represents an unknown type.
-	           //  you can store any class type related Class objects like :- Class<String>, Class<LoginPage>, Class<Integer>.
-	           Class<?> cl = Class.forName(ClassName); // Class.forName :- it loads LoginPage in runtime 
-	           
-	           // WebDriver.class :- is the argument type of the constructor and To say that WebDriver is a constructor argument type & To create an object with that constructor
-	           // .class :- it represents the type like 
-                       //String.class     -  Class<String> object related to String class
-	                   //Integer.class    -  Integer class object
-	                   //WebDriver.class  -  Class object related to WebDriver interface
-
+	           Class<?> cl = Class.forName(ClassName);
 	           Constructor<?> constructor = cl.getConstructor(WebDriver.class); 
 	           driver = DriverManager.getDriver();
 	           Object pageObject = constructor.newInstance(driver);
 
-
-	           //getDeclaredField :-This is a method of retrieving a single field (instance variable) in a class by its name.
 	           Field field = cl.getDeclaredField(textboxFieldName); 
-	           field.setAccessible(true); // private field access
-
+	           field.setAccessible(true); 
 	           By locator = (By) field.get(pageObject);
 
-	           // Use WebDriver to interact with the element
-	           
 	           WebElement element = driver.findElement(locator);
 	           element.clear();
 	           element.sendKeys(value);

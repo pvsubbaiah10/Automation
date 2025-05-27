@@ -2,12 +2,8 @@ package stepDefinitions;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
 import io.cucumber.java.en.And;
-import utils.DriverManager;
 import utils.LoadProperties;
 
 public class UserLoginPage {

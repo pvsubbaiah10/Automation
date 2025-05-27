@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 
@@ -16,7 +17,9 @@ public class UserLoginPage {
 	static WebDriver driver;
 	   	   
 	   @And("^the user enters UserName \"([^\"]*)\" into the \"([^\"]*)\" textbox at the \"([^\"]*)\" page$")
-	   public void Enter_UserName(String username, String textboxFieldName, String pageClassName) {
+	   public void Enter_UserName(String username, String textboxFieldName, String pageClassName) throws IOException {
+		   
+	  
 		   
 	   LoadProperties.pageClass_LoadPage(username, textboxFieldName, pageClassName);
 	   
@@ -26,10 +29,16 @@ public class UserLoginPage {
 	   
 	   
 	   @And("^the user enters Password \"([^\"]*)\" into the \"([^\"]*)\" textbox at the \"([^\"]*)\" page$")
-	   public void Enter_Password(String password, String textboxFieldName, String pageClassName) {
+	   public void Enter_Password(String password, String textboxFieldName, String pageClassName){
 	   
-		   LoadProperties.pageClass_LoadPage(password, textboxFieldName, pageClassName);
 		   
+			try {
+				LoadProperties.pageClass_LoadPage(password, textboxFieldName, pageClassName);
+			} catch (Exception e) {
+				
+				e.printStackTrace();
+			}
+		 
 	   }
 	      
 

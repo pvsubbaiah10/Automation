@@ -1,13 +1,13 @@
 package utils;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.util.Properties;
 import java.util.Set;
-
-import javax.management.RuntimeErrorException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +16,9 @@ import org.openqa.selenium.WebElement;
 public class LoadProperties {
 	
 	static WebDriver driver;
+	static String data ;
+	 
+	
 	
 	public static void Loading_Properties(String weburl) throws IOException {
 		
@@ -23,9 +26,9 @@ public class LoadProperties {
         Properties prop = new Properties();
         prop.load(fis);
         
-        
-        Set<String> li =prop.stringPropertyNames();
-        
+    /*    ----> another way to find matching key
+         
+        Set<String> li =prop.stringPropertyNames();  
         for(String s :li) { 	
         	 if(s.equals(weburl)) {
         		
@@ -36,15 +39,74 @@ public class LoadProperties {
                 DriverManager.initializeDriver(browser, url);
                 break;
         	 }else {
-        		 System.out.println("URL not found in properties file: " + weburl);
+        		 System.out.println("URL not found in global.properties file: " + weburl);
         		 break;
         	 }
+        }
+     */
+        
+        if(prop.containsKey(weburl)) {
+        	String url = prop.getProperty(weburl);
+        	
+        	System.out.println("Launch "+  weburl +" WebPage");
+        	
+        	String browser = prop.getProperty("browser");
+        	DriverManager.initializeDriver(browser, url);
+        	
+        }else {
+   		 System.out.println(weburl + " --> URL not found in global.properties file." );
         }
 		
 	}
 	
 	
-	public static void pageClass_LoadPage(String value, String textboxFieldName, String pageClassName) {
+	public static void pageClass_LoadPage(String value, String textboxFieldName, String pageClassName) throws IOException   {
+		
+		 
+		File fl = new File(System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\SecureCredentials.properties");	
+		 
+		
+		FileInputStream   fis = new FileInputStream(fl);
+		
+		Properties prop = new Properties();
+		
+		try {
+			prop.load(fis);
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+		
+	/*    ----> another way to find matching key
+	 
+	 	Set<String> sc = prop.stringPropertyNames();
+		boolean found = false;
+		
+		  for(String s:sc) {
+			  if(s.equals(value)) {
+				   System.out.println("value "+ s ); 
+				   data = prop.getProperty(s);
+				   found = true;
+				   break;	  
+			  }
+		  }
+
+		  if (!found) {
+			    throw new RuntimeException("Test data not found in SecureCredentials.properties file for key: " + value);
+			}
+	 */
+		  
+		String text = value.trim().toLowerCase();
+		
+		if (prop.containsKey(text)) {
+		    data = prop.getProperty(text);
+		} else {
+		    throw new RuntimeException(text + " --->  not found in SecureCredentials.properties file.");
+		}
+
+		// --> Loading pageObject class
 		
 	       try {	          	    	  
 	           String ClassName = "PageObjects." + pageClassName;
@@ -60,7 +122,7 @@ public class LoadProperties {
 
 	           WebElement element = driver.findElement(locator);
 	           element.clear();
-	           element.sendKeys(value);
+	           element.sendKeys(data);
 
 	       } catch (Exception e) {
 	           throw new RuntimeException("Error: " + e.getMessage(), e);
@@ -94,6 +156,10 @@ public class LoadProperties {
 		
 		
 	}
+	
+	
+	
+	
 	
 	
 

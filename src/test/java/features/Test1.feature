@@ -10,8 +10,8 @@ Feature: My first test
     #And the user close the browser
     
     
-    And the user enters UserName "student" into the "Username" textbox at the "LoginPage" page
-    And the user enters Password "Password123" into the "Password" textbox at the "LoginPage" page
+    And the user enters UserName "username" into the "Username" textbox at the "LoginPage" page
+    And the user enters Password "password" into the "Password" textbox at the "LoginPage" page
     And the user clicks the "login_button" element at the "LoginPage" page
     
     And the user close the browser

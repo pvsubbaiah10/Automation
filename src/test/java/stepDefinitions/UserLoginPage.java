@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import io.cucumber.java.en.And;
 import utils.DriverManager;
 
-public class SecureCredentials {
+public class UserLoginPage {
 	
 	WebDriver driver;
 	//LoginPage Lp;

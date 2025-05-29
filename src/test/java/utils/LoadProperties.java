@@ -8,9 +8,6 @@ import java.lang.reflect.Field;
 import java.util.Base64;
 import java.util.Properties;
 
-import javax.crypto.Cipher;
-import javax.crypto.spec.SecretKeySpec;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

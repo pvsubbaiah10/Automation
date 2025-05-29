@@ -127,6 +127,12 @@ public class LoadProperties {
 	           WebElement element = driver.findElement(locator);
 	           element.clear();
 	           D_data=EncryptUtils.Decode(E_data);
+	           
+				/* Base64 decoding with out using encrypted key encryption data.
+				  
+				 * byte[] D_data =Base64.getDecoder().decode(E_data); 
+				 * String ss= new String(D_data);
+				 */
 	           element.sendKeys(D_data);
 
 	       } catch (Exception e) {

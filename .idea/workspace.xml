@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="from Intelij">
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/UserLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/UserLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/Test1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/Test1.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/LoadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/LoadProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/properties/SecureCredentials.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/SecureCredentials.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/properties/global.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/global.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +206,55 @@
       <option name="project" value="LOCAL" />
       <updated>1748352841088</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="from Intelij">
+      <option name="closed" value="true" />
+      <created>1748352899067</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1748352899067</updated>
+    </task>
+    <task id="LOCAL-00015" summary="from Intelij">
+      <option name="closed" value="true" />
+      <created>1748352973433</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1748352973433</updated>
+    </task>
+    <task id="LOCAL-00016" summary="from Intelij">
+      <option name="closed" value="true" />
+      <created>1748353003525</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1748353003525</updated>
+    </task>
+    <task id="LOCAL-00017" summary="from Intelij">
+      <option name="closed" value="true" />
+      <created>1748353070529</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1748353070529</updated>
+    </task>
+    <task id="LOCAL-00018" summary="from Intelij">
+      <option name="closed" value="true" />
+      <created>1748353086507</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1748353086507</updated>
+    </task>
+    <task id="LOCAL-00019" summary="from Intelij">
+      <option name="closed" value="true" />
+      <created>1748353180012</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1748353180012</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

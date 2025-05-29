@@ -5,8 +5,11 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
+import java.util.Base64;
 import java.util.Properties;
 
+import javax.crypto.Cipher;
+import javax.crypto.spec.SecretKeySpec;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,13 +18,15 @@ import org.openqa.selenium.WebElement;
 public class LoadProperties {
 	
 	static WebDriver driver;
-	static String data ;
-	 
+	static String E_data ;
+	static String D_data ;
+	
+	
 	
 	
 	public static void Loading_Properties(String weburl) throws IOException {
 		
-        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\global.properties");
+        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\config\\global.properties");
         Properties prop = new Properties();
         prop.load(fis);
         
@@ -47,7 +52,7 @@ public class LoadProperties {
         if(prop.containsKey(weburl)) {
         	String url = prop.getProperty(weburl);
         	
-        	System.out.println("Launch "+  weburl +" WebPage");
+        	System.out.println("Launch \""+  weburl +"\" WebPage");
         	
         	String browser = prop.getProperty("browser");
         	DriverManager.initializeDriver(browser, url);
@@ -62,7 +67,7 @@ public class LoadProperties {
 	public static void pageClass_LoadPage(String value, String textboxFieldName, String pageClassName) throws IOException   {
 		
 		 
-		File fl = new File(System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\SecureCredentials.properties");	
+		File fl = new File(System.getProperty("user.dir") + "\\src\\test\\resources\\config\\SecureCredentials.properties");	
 		 
 		
 		FileInputStream   fis = new FileInputStream(fl);
@@ -100,7 +105,7 @@ public class LoadProperties {
 		String text = value.trim().toLowerCase();
 		
 		if (prop.containsKey(text)) {
-		    data = prop.getProperty(text);
+			E_data  = prop.getProperty(text);
 		} else {
 		    throw new RuntimeException(text + " --->  not found in SecureCredentials.properties file.");
 		}
@@ -121,7 +126,8 @@ public class LoadProperties {
 
 	           WebElement element = driver.findElement(locator);
 	           element.clear();
-	           element.sendKeys(data);
+	           D_data=EncryptUtils.Decode(E_data);
+	           element.sendKeys(D_data);
 
 	       } catch (Exception e) {
 	           throw new RuntimeException("Error: " + e.getMessage(), e);

@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="from Intelij">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config/credentials.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Runners/TestNGRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/TestNGRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/Test1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Test1.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/LauncWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LauncWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/UserLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/UserLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/DriverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/EncryptUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/EncryptUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/KeyGeneratorUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/KeyGeneratorUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/LoadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/LoadProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/SecureCredentials.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/global.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/env.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
-    </list>
+    <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="from Intelij" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -303,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748546643831</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="from Intelij">
+      <option name="closed" value="true" />
+      <created>1748800235919</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1748800235919</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

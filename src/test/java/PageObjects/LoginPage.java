@@ -16,6 +16,11 @@ public class LoginPage {
      private By Password  = By.id("password");
 	
 	 private By login_button = By.id("submit");
+	 
+     private By Username1 = By.name("username");
+     private By Password2  = By.name("password");
+	
+	 private By login_button1 = By.xpath("//*[@type=\"submit\"]");
 	
 	
   

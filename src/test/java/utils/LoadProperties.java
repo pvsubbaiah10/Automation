@@ -5,12 +5,15 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
+import java.time.Duration;
 import java.util.Base64;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoadProperties {
 	
@@ -23,7 +26,7 @@ public class LoadProperties {
 	
 	public static void Loading_Properties(String weburl) throws IOException {
 		
-        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\config\\global.properties");
+        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\config\\env.properties");
         Properties prop = new Properties();
         prop.load(fis);
         
@@ -40,7 +43,7 @@ public class LoadProperties {
                 DriverManager.initializeDriver(browser, url);
                 break;
         	 }else {
-        		 System.out.println("URL not found in global.properties file: " + weburl);
+        		 System.out.println("URL not found in env.properties file: " + weburl);
         		 break;
         	 }
         }
@@ -55,7 +58,7 @@ public class LoadProperties {
         	DriverManager.initializeDriver(browser, url);
         	
         }else {
-   		 System.out.println(weburl + " --> URL not found in global.properties file." );
+   		 System.out.println(weburl + " --> URL not found in env.properties file." );
         }
 		
 	}
@@ -64,22 +67,16 @@ public class LoadProperties {
 	public static void pageClass_LoadPage(String value, String textboxFieldName, String pageClassName) throws IOException   {
 		
 		 
-		File fl = new File(System.getProperty("user.dir") + "\\src\\test\\resources\\config\\SecureCredentials.properties");	
-		 
-		
+		File fl = new File(System.getProperty("user.dir") + "\\src\\test\\resources\\config\\credentials.properties");
 		FileInputStream   fis = new FileInputStream(fl);
-		
 		Properties prop = new Properties();
-		
 		try {
 			prop.load(fis);
 		} catch (IOException e) {
 			
 			e.printStackTrace();
 		}
-		
-		
-		
+
 	/*    ----> another way to find matching key
 	 
 	 	Set<String> sc = prop.stringPropertyNames();
@@ -95,7 +92,7 @@ public class LoadProperties {
 		  }
 
 		  if (!found) {
-			    throw new RuntimeException("Test data not found in SecureCredentials.properties file for key: " + value);
+			    throw new RuntimeException("Test data not found in credentials.properties file for key: " + value);
 			}
 	 */
 		  
@@ -104,7 +101,7 @@ public class LoadProperties {
 		if (prop.containsKey(text)) {
 			E_data  = prop.getProperty(text);
 		} else {
-		    throw new RuntimeException(text + " --->  not found in SecureCredentials.properties file.");
+		    throw new RuntimeException(text + " --->  not found in credentials.properties file.");
 		}
 
 		// --> Loading pageObject class
@@ -121,7 +118,12 @@ public class LoadProperties {
 	           field.setAccessible(true); 
 	           By locator = (By) field.get(pageObject);
 
-	           WebElement element = driver.findElement(locator);
+	           //WebElement element = driver.findElement(locator); // you can use this with out wait.
+	           
+	           // Explicit Wait until element find.
+	           WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	           WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
 	           element.clear();
 	           D_data=EncryptUtils.Decode(E_data);
 	           
@@ -154,10 +156,12 @@ public class LoadProperties {
 			By locator = (By) field.get(pageObject);
 			
 			WebElement element = driver.findElement(locator);
+						
+//			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
+//	        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+	        
 			element.click();
-			
-			
-			
+
 		}catch (Exception e) {
 			throw new RuntimeException("Error: " + e.getMessage(), e);
 		}
@@ -165,10 +169,6 @@ public class LoadProperties {
 		
 	}
 	
-	
-	
-	
-	
-	
+
 
 }

@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.time.Duration;
-import java.util.Base64;
 import java.util.Properties;
 
 import org.openqa.selenium.By;

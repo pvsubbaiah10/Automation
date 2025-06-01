@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 public class BaseTestNGRunner extends AbstractTestNGCucumberTests{
 	
 	
-	// if you want parallel execution you can uncomments this.
+	// if you want parallel execution you can uncomment this.
 //    @Override
 //    @DataProvider(parallel = true)
 //    public Object[][] scenarios() {

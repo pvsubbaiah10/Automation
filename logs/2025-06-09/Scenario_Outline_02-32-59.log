@@ -1,7 +1,7 @@
-[23:57:20] [INFO] <=== Starting Scenario: Launch instagram ===>
-[23:57:23] [INFO] Step [Passed]: Launch "instagram" WebPage
-[23:57:23] [ERROR] Step [Failed]: Enter UserName "subb" into "Username1" textbox at "LoginPage" page
-[23:57:23] [ERROR] ERROR ---> : subb --->  not found in credentials.properties file.
+[02:32:59] [INFO] <=== Starting Scenario: Launch instagram ===>
+[02:33:04] [INFO] Step [Passed]: Launch "instagram" WebPage
+[02:33:04] [ERROR] Step [Failed]: Enter UserName "subb" into "Username1" textbox at "LoginPage" page
+[02:33:04] [ERROR] { ERROR ---> }: subb --->  not found in credentials.properties file.
 java.lang.RuntimeException: subb --->  not found in credentials.properties file.
 	at utils.LoadProperties.pageClass_LoadPage(LoadProperties.java:103) ~[test-classes/:?]
 	at stepDefinitions.UserLoginPage.Enter_UserName(UserLoginPage.java:16) ~[test-classes/:?]
@@ -51,3 +51,19 @@ java.lang.RuntimeException: subb --->  not found in credentials.properties file.
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+[02:33:05] [INFO] <=== Starting Scenario: Launch instagram ===>
+[02:33:08] [INFO] Step [Passed]: Launch "instagram" WebPage
+[02:33:09] [INFO] Step [Passed]: Enter UserName "arise" into "Username1" textbox at "LoginPage" page
+[02:33:09] [INFO] Step [Passed]: Enter Password "pass_b" into "Password2" textbox at "LoginPage" page
+[02:33:09] [INFO] Step [Passed]: Click "login_button1" element at "LoginPage" page
+[02:33:10] [INFO] <=== Starting Scenario: Launch Automation_Practice_Url ===>
+[02:33:15] [INFO] Step [Passed]: Launch "Automation_Practice_Url" WebPage
+[02:33:15] [INFO] Step [Passed]: Enter UserName "username" into "Username" textbox at "LoginPage" page
+[02:33:15] [INFO] Step [Passed]: Enter Password "password" into "Password" textbox at "LoginPage" page
+[02:33:16] [INFO] Step [Passed]: Click "login_button" element at "LoginPage" page
+[02:33:17] [INFO] [TestNG] Time taken by org.testng.reporters.jq.Main@49122b8f: 53 ms
+[02:33:17] [INFO] [TestNG] Time taken by org.testng.reporters.FailedReporter@317e9c3c: 2 ms
+[02:33:17] [INFO] [TestNG] Time taken by org.testng.reporters.XMLReporter@70c53dbe: 9 ms
+[02:33:17] [INFO] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@cf518cf: 6 ms
+[02:33:17] [INFO] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@eca6a74: 5 ms
+[02:33:17] [INFO] [TestNG] Time taken by org.testng.internal.ExitCodeListener@79fd6f95: 0 ms

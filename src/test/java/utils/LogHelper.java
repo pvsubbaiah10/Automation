@@ -2,46 +2,56 @@ package utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.core.Appender;
 import org.apache.logging.log4j.core.LoggerContext;
-import org.apache.logging.log4j.core.config.Configuration;
-import org.apache.logging.log4j.core.config.LoggerConfig;
+import org.apache.logging.log4j.core.config.*;
 import org.apache.logging.log4j.core.appender.FileAppender;
 import org.apache.logging.log4j.core.layout.PatternLayout;
 
-import java.nio.file.Paths;
+import java.io.IOException;
+import java.nio.file.*;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
+import java.util.Map;
 
 public class LogHelper {
 
-    private static Logger logger;
+    private static final Map<String, Logger> loggerMap = new HashMap<>();
 
-
-    
-    @SuppressWarnings("deprecation")
     public static void setLogger(String featureName) {
-        LoggerContext context = (LoggerContext) LogManager.getContext(false);
-        org.apache.logging.log4j.core.config.Configuration config = context.getConfiguration();
-
-        String timestamp = java.time.LocalTime.now().format(java.time.format.DateTimeFormatter.ofPattern("HHmmss"));
-        String logFileName = Paths.get("logs", featureName + "_" + timestamp + ".log").toString();
-
-        PatternLayout layout = PatternLayout.newBuilder()
-                .withPattern("[%d{HH:mm:ss}] [%p] %m%n")
-                .build();
-
-        String appenderName = featureName + "FileAppender";
-
-        // ✅ Check and remove previous appender if exists
-        Appender oldAppender = config.getAppender(appenderName);
-        if (oldAppender != null) {
-            oldAppender.stop();
-            LoggerConfig loggerConfig = config.getLoggerConfig(LogManager.ROOT_LOGGER_NAME);
-            loggerConfig.removeAppender(appenderName);  // <-- THIS is the right remove method
+        if (loggerMap.containsKey(featureName)) {
+            return; // Already created
         }
 
+        LoggerContext context = (LoggerContext) LogManager.getContext(false);
+        Configuration config = context.getConfiguration();
+
+        // Date folder format
+        String dateFolder = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        Path logDir = Paths.get("logs", dateFolder);
+
+        try {
+            if (!Files.exists(logDir)) {
+                Files.createDirectories(logDir);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Time format with AM/PM
+        String timePart = LocalTime.now().format(DateTimeFormatter.ofPattern("hh-mm-ssa")); 
+        String logFileName = featureName + "_" + timePart + ".log";
+        String fullPath = logDir.resolve(logFileName).toString();
+
+        // Layout with AM/PM in time
+        PatternLayout layout = PatternLayout.newBuilder()
+                .withPattern("[%d{hh:mm:ss a}] [%p] %m%n") 
+                .build();
+
         FileAppender appender = FileAppender.newBuilder()
-                .withFileName(logFileName)
-                .withName(appenderName)
+                .withFileName(fullPath)
+                .withName(featureName + "_FileAppender")
                 .withLayout(layout)
                 .withAppend(false)
                 .setConfiguration(config)
@@ -55,12 +65,11 @@ public class LogHelper {
 
         context.updateLoggers();
 
-        logger = LogManager.getLogger(featureName);
+        Logger logger = LogManager.getLogger(featureName);
+        loggerMap.put(featureName, logger);
     }
 
-
-
-    public static Logger getLogger() {
-        return logger;
+    public static Logger getLogger(String featureName) {
+        return loggerMap.get(featureName);
     }
 }

@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="from Intelij" />
+    <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="from Intelij">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/25-06-08/default.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Scenario_Outline_235627.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Scenario_Outline_235630.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Scenario_Outline_235720.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Scenario_Outline_235724.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Test1_235633.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Test1_235728.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/LaunchWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LaunchWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/UserLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/UserLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/LogHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/LogHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/StepLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/StepLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -368,7 +389,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749406319177</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="from Intelij">
+      <option name="closed" value="true" />
+      <created>1749407352063</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1749407352063</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

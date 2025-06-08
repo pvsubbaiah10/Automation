@@ -10,6 +10,9 @@ import org.apache.logging.log4j.Logger;
 public class Hooks {
 
     private Logger logger;
+    private String featureName;
+
+  
 
     // Close browser after every scenario
     @After
@@ -22,10 +25,10 @@ public class Hooks {
     public void beforeScenario(Scenario scenario) {
         String uri = scenario.getUri().toString();
         String[] parts = uri.split("/");
-        String featureName = parts[parts.length - 1].replace(".feature", "");
+        featureName = parts[parts.length - 1].replace(".feature", "");
 
-        LogHelper.setLogger(featureName);   // This will create unique log file per run
-        logger = LogHelper.getLogger();
+        LogHelper.setLogger(featureName);
+        logger = LogHelper.getLogger(featureName);
 
         logger.info("<=== Starting Scenario: " + scenario.getName() + " ===>");
     }

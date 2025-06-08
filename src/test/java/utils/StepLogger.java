@@ -12,6 +12,6 @@ public class StepLogger {
 
     public static void logFail(String stepName, Exception e) {
         log.error("Step [Failed]: " + stepName);
-        log.error("ERROR ---> : " + e.getMessage(), e); 
+        log.error("{ ERROR ---> }: " + e.getMessage(), e); 
     }
 }

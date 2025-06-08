@@ -2,6 +2,7 @@ package utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.Appender;
 import org.apache.logging.log4j.core.LoggerContext;
 import org.apache.logging.log4j.core.config.Configuration;
 import org.apache.logging.log4j.core.config.LoggerConfig;
@@ -13,19 +14,34 @@ import java.nio.file.Paths;
 public class LogHelper {
 
     private static Logger logger;
+
+
+    
     @SuppressWarnings("deprecation")
     public static void setLogger(String featureName) {
         LoggerContext context = (LoggerContext) LogManager.getContext(false);
-        Configuration config = context.getConfiguration();
+        org.apache.logging.log4j.core.config.Configuration config = context.getConfiguration();
 
-        String logFileName = Paths.get("logs", featureName + ".log").toString();
+        String timestamp = java.time.LocalTime.now().format(java.time.format.DateTimeFormatter.ofPattern("HHmmss"));
+        String logFileName = Paths.get("logs", featureName + "_" + timestamp + ".log").toString();
+
         PatternLayout layout = PatternLayout.newBuilder()
                 .withPattern("[%d{HH:mm:ss}] [%p] %m%n")
                 .build();
 
+        String appenderName = featureName + "FileAppender";
+
+        // ✅ Check and remove previous appender if exists
+        Appender oldAppender = config.getAppender(appenderName);
+        if (oldAppender != null) {
+            oldAppender.stop();
+            LoggerConfig loggerConfig = config.getLoggerConfig(LogManager.ROOT_LOGGER_NAME);
+            loggerConfig.removeAppender(appenderName);  // <-- THIS is the right remove method
+        }
+
         FileAppender appender = FileAppender.newBuilder()
                 .withFileName(logFileName)
-                .withName(featureName + "FileAppender")
+                .withName(appenderName)
                 .withLayout(layout)
                 .withAppend(false)
                 .setConfiguration(config)
@@ -39,8 +55,10 @@ public class LogHelper {
 
         context.updateLoggers();
 
-        logger = LogManager.getLogger(featureName); // Set logger
+        logger = LogManager.getLogger(featureName);
     }
+
+
 
     public static Logger getLogger() {
         return logger;

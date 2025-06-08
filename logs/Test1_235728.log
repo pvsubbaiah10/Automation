@@ -1,0 +1,11 @@
+[23:57:28] [INFO] <=== Starting Scenario: Launch Automation_Practice_Url ===>
+[23:57:34] [INFO] Step [Passed]: Launch "Automation_Practice_Url" WebPage
+[23:57:34] [INFO] Step [Passed]: Enter UserName "username" into "Username" textbox at "LoginPage" page
+[23:57:34] [INFO] Step [Passed]: Enter Password "password" into "Password" textbox at "LoginPage" page
+[23:57:36] [INFO] Step [Passed]: Click "login_button" element at "LoginPage" page
+[23:57:37] [INFO] [TestNG] Time taken by org.testng.reporters.jq.Main@3b4d50b: 34 ms
+[23:57:37] [INFO] [TestNG] Time taken by org.testng.reporters.FailedReporter@68880c21: 0 ms
+[23:57:37] [INFO] [TestNG] Time taken by org.testng.reporters.XMLReporter@7342e05d: 13 ms
+[23:57:37] [INFO] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@3ad4a7d6: 0 ms
+[23:57:37] [INFO] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@49c675f0: 0 ms
+[23:57:37] [INFO] [TestNG] Time taken by org.testng.internal.ExitCodeListener@14823f76: 0 ms

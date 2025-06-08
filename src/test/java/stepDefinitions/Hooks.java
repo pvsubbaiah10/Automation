@@ -12,8 +12,7 @@ public class Hooks {
     private Logger logger;
     private String featureName;
 
-  
-
+ 
     // Close browser after every scenario
     @After
     public void afterScenario() {

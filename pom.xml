@@ -13,6 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<cucumber.version>7.22.1</cucumber.version>
 	</properties>
 
 	<build>
@@ -38,19 +39,19 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.32.0</version>
+			<version>4.33.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>7.22.1</version>
+			<version>${cucumber.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-testng</artifactId>
-			<version>7.22.1</version>
+			<version>${cucumber.version}</version>
 		</dependency>
 
 		<dependency>
@@ -59,17 +60,28 @@
 			<version>7.22.2</version>
 		</dependency>
 
-
+		<!-- log4j2 API -->
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>2.0.17</version>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.24.3</version>
 		</dependency>
+
+		<!-- log4j2 core -->
 		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>1.5.18</version>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.24.3</version>
+		</dependency>
+
+		<!--https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
+		<!-- For log4j2 with slf4j binding (optional but useful) -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>2.24.3</version>
 			<scope>compile</scope>
 		</dependency>
+
 	</dependencies>
 </project>

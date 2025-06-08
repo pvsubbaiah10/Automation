@@ -33,8 +33,7 @@ public class EncryptUtils {
 		Cipher cipher = Cipher.getInstance("AES");
 		cipher.init(Cipher.DECRYPT_MODE, keySpec);
 		byte[] decoded = Base64.getDecoder().decode(encryptedData);
-		String Ds = new String(cipher.doFinal(decoded)); // decoding given encryptedData with key and gives into string
-															// format.
+		String Ds = new String(cipher.doFinal(decoded)); // decoding given encryptedData with key and gives into string format.
 		return Ds;
 	}
 

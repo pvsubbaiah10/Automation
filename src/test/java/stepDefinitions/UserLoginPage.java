@@ -1,44 +1,50 @@
 package stepDefinitions;
 
 import java.io.IOException;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import io.cucumber.java.en.And;
 import utils.LoadProperties;
+import utils.StepLogger;
+import utils.StepTracker;
 
 public class UserLoginPage {
-	
-	
-	private static final Logger logger = LoggerFactory.getLogger(UserLoginPage.class);
 
 	@And("^the user enters UserName \"([^\"]*)\" into the \"([^\"]*)\" textbox at the \"([^\"]*)\" page$")
 	public void Enter_UserName(String username, String textboxFieldName, String pageClassName) throws IOException {
-
-		 logger.info("the user enters UserName '{}' into the '{}' textbox at the '{}' page", username, textboxFieldName, pageClassName);
-		LoadProperties.pageClass_LoadPage(username, textboxFieldName, pageClassName);
-
+		String stepName = "Enter UserName \"" + username + "\" into \"" + textboxFieldName + "\" textbox at \"" + pageClassName + "\" page";
+		StepTracker.setStep(stepName);
+		try {
+			LoadProperties.pageClass_LoadPage(username, textboxFieldName, pageClassName);
+			StepLogger.logPass(stepName);
+		} catch (Exception e) {
+			StepLogger.logFail(stepName, e);
+			throw e;
+		}
 	}
 
 	@And("^the user enters Password \"([^\"]*)\" into the \"([^\"]*)\" textbox at the \"([^\"]*)\" page$")
-	public void Enter_Password(String password, String textboxFieldName, String pageClassName) {
-
-		 logger.info("the user enters UserName '{}' into the '{}' textbox at the '{}' page", password, textboxFieldName, pageClassName);
+	public void Enter_Password(String password, String textboxFieldName, String pageClassName) throws IOException {
+		String stepName = "Enter Password \"" + password + "\" into \"" + textboxFieldName + "\" textbox at \"" + pageClassName + "\" page";
+		StepTracker.setStep(stepName);
 		try {
 			LoadProperties.pageClass_LoadPage(password, textboxFieldName, pageClassName);
+			StepLogger.logPass(stepName);
 		} catch (Exception e) {
-
-			e.printStackTrace();
+			StepLogger.logFail(stepName, e);
+			throw e;
 		}
 	}
 
 	@And("^the user clicks the \"([^\"]*)\" element at the \"([^\"]*)\" page$")
 	public void Click_button(String button, String pageClassName) {
-
-		 logger.info("the user clicks the '{}' element at the '{}' page", button, pageClassName);
-		LoadProperties.pageClass_button(button, pageClassName);
-
+		String stepName = "Click \"" + button + "\" element at \"" + pageClassName + "\" page";
+		StepTracker.setStep(stepName);
+		try {
+			LoadProperties.pageClass_button(button, pageClassName);
+			StepLogger.logPass(stepName);
+		} catch (Exception e) {
+			StepLogger.logFail(stepName, e);
+			throw e;
+		}
 	}
 
 }

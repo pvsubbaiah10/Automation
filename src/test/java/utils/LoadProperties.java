@@ -51,7 +51,7 @@ public class LoadProperties {
         if(prop.containsKey(weburl)) {
         	String url = prop.getProperty(weburl);
         	
-        	System.out.println("Launch \""+  weburl +"\" WebPage");
+        	//System.out.println("Launch \""+  weburl +"\" WebPage");
         	
         	String browser = prop.getProperty("browser");
         	DriverManager.initializeDriver(browser, url);

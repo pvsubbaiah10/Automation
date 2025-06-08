@@ -9,4 +9,9 @@ import io.cucumber.testng.CucumberOptions;
 
 public class TestNGRunner extends BaseTestNGRunner {
 	
+	// browser test in cmd 
+	// allure screenshots
+	// what is Gradle
+	// jenkins
+	
 }

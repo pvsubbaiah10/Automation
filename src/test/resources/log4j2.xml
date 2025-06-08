@@ -2,9 +2,7 @@
 <Configuration status="WARN">
     <Properties>
         <!-- Base logs folder -->
-        <Property name="logDir">logs</Property>
-        <!-- default log file name (root logger) -->
-       
+        <Property name="logDir">logs</Property>         
     </Properties>
 
     <Appenders>

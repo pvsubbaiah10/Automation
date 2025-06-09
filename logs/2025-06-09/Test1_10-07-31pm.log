@@ -1,0 +1,26 @@
+[10:07:31 pm] [INFO] <=== Starting Scenario: Launch Automation_Practice_Url ===>
+[10:07:40 pm] [INFO] Step [Passed]: Launch "Automation_Practice_Url" WebPage
+[10:07:41 pm] [INFO] Step [Passed]: Enter UserName "username" into "Username" textbox at "LoginPage" page
+[10:07:41 pm] [INFO] Step [Passed]: Enter Password "password" into "Password" textbox at "LoginPage" page
+[10:07:42 pm] [INFO] Step [Passed]: Click "login_button" element at "LoginPage" page
+[10:07:42 pm] [DEBUG] Save core properties part
+[10:07:42 pm] [DEBUG] Save content types part
+[10:07:42 pm] [DEBUG] Save package relationships
+[10:07:42 pm] [DEBUG] Save part 'docProps/app.xml'
+[10:07:42 pm] [DEBUG] Save part 'docProps/core.xml'
+[10:07:42 pm] [DEBUG] Save part 'word/document.xml'
+[10:07:42 pm] [DEBUG] Save part 'word/media/image1.png'
+[10:07:42 pm] [DEBUG] Save part 'word/media/image2.png'
+[10:07:42 pm] [DEBUG] Save part 'word/media/image3.png'
+[10:07:42 pm] [DEBUG] Save part 'word/media/image4.png'
+[10:07:42 pm] [DEBUG] Save part 'word/settings.xml'
+[10:07:42 pm] [DEBUG] Save content types part
+[10:07:42 pm] [DEBUG] Save package relationships
+[10:07:42 pm] [DEBUG] Save part 'docProps/app.xml'
+[10:07:42 pm] [DEBUG] Save part 'docProps/core.xml'
+[10:07:42 pm] [DEBUG] Save part 'word/document.xml'
+[10:07:42 pm] [DEBUG] Save part 'word/media/image1.png'
+[10:07:42 pm] [DEBUG] Save part 'word/media/image2.png'
+[10:07:42 pm] [DEBUG] Save part 'word/media/image3.png'
+[10:07:42 pm] [DEBUG] Save part 'word/media/image4.png'
+[10:07:42 pm] [DEBUG] Save part 'word/settings.xml'

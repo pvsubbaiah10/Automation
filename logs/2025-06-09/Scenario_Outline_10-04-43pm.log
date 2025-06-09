@@ -1,7 +1,7 @@
-[02:41:58 am] [INFO] <=== Starting Scenario: Launch instagram ===>
-[02:42:02 am] [INFO] Step [Passed]: Launch "instagram" WebPage
-[02:42:02 am] [ERROR] Step [Failed]: Enter UserName "subb" into "Username1" textbox at "LoginPage" page
-[02:42:02 am] [ERROR] { ERROR ---> }: subb --->  not found in credentials.properties file.
+[10:04:43 pm] [INFO] <=== Starting Scenario: Launch instagram ===>
+[10:04:52 pm] [INFO] Step [Passed]: Launch "instagram" WebPage
+[10:04:52 pm] [ERROR] Step [Failed]: Enter UserName "subb" into "Username1" textbox at "LoginPage" page
+[10:04:52 pm] [ERROR] { ERROR ---> }: subb --->  not found in credentials.properties file.
 java.lang.RuntimeException: subb --->  not found in credentials.properties file.
 	at utils.LoadProperties.pageClass_LoadPage(LoadProperties.java:103) ~[test-classes/:?]
 	at stepDefinitions.UserLoginPage.Enter_UserName(UserLoginPage.java:16) ~[test-classes/:?]
@@ -51,19 +51,65 @@ java.lang.RuntimeException: subb --->  not found in credentials.properties file.
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
-[02:42:03 am] [INFO] <=== Starting Scenario: Launch instagram ===>
-[02:42:06 am] [INFO] Step [Passed]: Launch "instagram" WebPage
-[02:42:07 am] [INFO] Step [Passed]: Enter UserName "arise" into "Username1" textbox at "LoginPage" page
-[02:42:07 am] [INFO] Step [Passed]: Enter Password "pass_b" into "Password2" textbox at "LoginPage" page
-[02:42:07 am] [INFO] Step [Passed]: Click "login_button1" element at "LoginPage" page
-[02:42:08 am] [INFO] <=== Starting Scenario: Launch Automation_Practice_Url ===>
-[02:42:13 am] [INFO] Step [Passed]: Launch "Automation_Practice_Url" WebPage
-[02:42:13 am] [INFO] Step [Passed]: Enter UserName "username" into "Username" textbox at "LoginPage" page
-[02:42:13 am] [INFO] Step [Passed]: Enter Password "password" into "Password" textbox at "LoginPage" page
-[02:42:14 am] [INFO] Step [Passed]: Click "login_button" element at "LoginPage" page
-[02:42:15 am] [INFO] [TestNG] Time taken by org.testng.reporters.jq.Main@2a331b46: 47 ms
-[02:42:15 am] [INFO] [TestNG] Time taken by org.testng.reporters.FailedReporter@1d23ff23: 0 ms
-[02:42:15 am] [INFO] [TestNG] Time taken by org.testng.reporters.XMLReporter@6ed16657: 12 ms
-[02:42:15 am] [INFO] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@4af70944: 4 ms
-[02:42:15 am] [INFO] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@7661b5a: 0 ms
-[02:42:15 am] [INFO] [TestNG] Time taken by org.testng.internal.ExitCodeListener@7c36db44: 0 ms
+[10:04:53 pm] [DEBUG] Save core properties part
+[10:04:53 pm] [DEBUG] Save content types part
+[10:04:53 pm] [DEBUG] Save package relationships
+[10:04:53 pm] [DEBUG] Save part 'docProps/app.xml'
+[10:04:53 pm] [DEBUG] Save part 'docProps/core.xml'
+[10:04:53 pm] [DEBUG] Save part 'word/document.xml'
+[10:04:53 pm] [DEBUG] Save part 'word/media/image1.png'
+[10:04:53 pm] [DEBUG] Save part 'word/media/image2.png'
+[10:04:53 pm] [DEBUG] Save part 'word/settings.xml'
+[10:04:53 pm] [DEBUG] Save content types part
+[10:04:53 pm] [DEBUG] Save package relationships
+[10:04:53 pm] [DEBUG] Save part 'docProps/app.xml'
+[10:04:53 pm] [DEBUG] Save part 'docProps/core.xml'
+[10:04:53 pm] [DEBUG] Save part 'word/document.xml'
+[10:04:53 pm] [DEBUG] Save part 'word/media/image1.png'
+[10:04:53 pm] [DEBUG] Save part 'word/media/image2.png'
+[10:04:53 pm] [DEBUG] Save part 'word/settings.xml'
+[10:04:54 pm] [INFO] <=== Starting Scenario: Launch instagram ===>
+[10:04:54 pm] [DEBUG] Parsing relationship: /word/_rels/document.xml.rels
+[10:04:54 pm] [DEBUG] Parsing relationship: /_rels/.rels
+[10:04:56 pm] [INFO] Step [Passed]: Launch "instagram" WebPage
+[10:04:57 pm] [INFO] Step [Passed]: Enter UserName "arise" into "Username1" textbox at "LoginPage" page
+[10:04:57 pm] [INFO] Step [Passed]: Enter Password "pass_b" into "Password2" textbox at "LoginPage" page
+[10:04:57 pm] [INFO] Step [Passed]: Click "login_button1" element at "LoginPage" page
+[10:04:57 pm] [DEBUG] Save content types part
+[10:04:57 pm] [DEBUG] Save package relationships
+[10:04:57 pm] [DEBUG] Save part 'docProps/app.xml'
+[10:04:57 pm] [DEBUG] Save part 'docProps/core.xml'
+[10:04:57 pm] [DEBUG] Save part 'word/document.xml'
+[10:04:57 pm] [DEBUG] Save part 'word/media/image1.png'
+[10:04:57 pm] [DEBUG] Save part 'word/media/image2.png'
+[10:04:57 pm] [DEBUG] Save part 'word/media/image3.png'
+[10:04:57 pm] [DEBUG] Save part 'word/media/image4.png'
+[10:04:57 pm] [DEBUG] Save part 'word/media/image5.png'
+[10:04:57 pm] [DEBUG] Save part 'word/media/image6.png'
+[10:04:57 pm] [DEBUG] Save part 'word/settings.xml'
+[10:04:58 pm] [INFO] <=== Starting Scenario: Launch Automation_Practice_Url ===>
+[10:05:04 pm] [INFO] Step [Passed]: Launch "Automation_Practice_Url" WebPage
+[10:05:04 pm] [INFO] Step [Passed]: Enter UserName "username" into "Username" textbox at "LoginPage" page
+[10:05:04 pm] [INFO] Step [Passed]: Enter Password "password" into "Password" textbox at "LoginPage" page
+[10:05:07 pm] [INFO] Step [Passed]: Click "login_button" element at "LoginPage" page
+[10:05:07 pm] [DEBUG] Save core properties part
+[10:05:07 pm] [DEBUG] Save content types part
+[10:05:07 pm] [DEBUG] Save package relationships
+[10:05:07 pm] [DEBUG] Save part 'docProps/app.xml'
+[10:05:07 pm] [DEBUG] Save part 'docProps/core.xml'
+[10:05:07 pm] [DEBUG] Save part 'word/document.xml'
+[10:05:07 pm] [DEBUG] Save part 'word/media/image1.png'
+[10:05:07 pm] [DEBUG] Save part 'word/media/image2.png'
+[10:05:07 pm] [DEBUG] Save part 'word/media/image3.png'
+[10:05:07 pm] [DEBUG] Save part 'word/media/image4.png'
+[10:05:07 pm] [DEBUG] Save part 'word/settings.xml'
+[10:05:07 pm] [DEBUG] Save content types part
+[10:05:07 pm] [DEBUG] Save package relationships
+[10:05:07 pm] [DEBUG] Save part 'docProps/app.xml'
+[10:05:07 pm] [DEBUG] Save part 'docProps/core.xml'
+[10:05:07 pm] [DEBUG] Save part 'word/document.xml'
+[10:05:07 pm] [DEBUG] Save part 'word/media/image1.png'
+[10:05:07 pm] [DEBUG] Save part 'word/media/image2.png'
+[10:05:07 pm] [DEBUG] Save part 'word/media/image3.png'
+[10:05:07 pm] [DEBUG] Save part 'word/media/image4.png'
+[10:05:07 pm] [DEBUG] Save part 'word/settings.xml'

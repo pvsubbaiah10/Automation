@@ -3,7 +3,11 @@ package stepDefinitions;
 import io.cucumber.java.*;
 import utils.DriverManager;
 import utils.LogHelper;
+import utils.ScreenshotUtil;
 import utils.StepTracker;
+import utils.WordReportGenerator;
+
+import java.io.IOException;
 
 import org.apache.logging.log4j.Logger;
 
@@ -13,11 +17,11 @@ public class Hooks {
     private String featureName;
 
  
-    // Close browser after every scenario
-    @After
-    public void afterScenario() {
-        DriverManager.quitDriver();
-    }
+//    // Close browser after every scenario
+//    @After
+//    public void afterScenario() {
+//        DriverManager.quitDriver();
+//    }
     
 
     @Before
@@ -28,27 +32,42 @@ public class Hooks {
 
         LogHelper.setLogger(featureName);
         logger = LogHelper.getLogger(featureName);
-
         logger.info("<=== Starting Scenario: " + scenario.getName() + " ===>");
+
+        // Word report init for this feature
+        WordReportGenerator.init(featureName);
     }
 
+    @AfterStep
+    public void afterStep(Scenario scenario) {
+        String stepText = StepTracker.getStep();
+        if (stepText == null) return;
+
+        String status = scenario.isFailed() ? "FAIL" : "PASS";
+        String screenshotPath = null;
+
+        try {
+            // Screenshot capture
+            screenshotPath = ScreenshotUtil.captureScreenshot(featureName, scenario.getName());
+        } catch (IOException e) {
+            logger.error("Screenshot capture failed: " + e.getMessage());
+        }
+
+        // Add step info to Word report
+        WordReportGenerator.addStep(stepText, status, screenshotPath);
+    }
     
-//    @AfterStep
-//    public void afterStep(Scenario scenario) {
-//        String stepName = StepTracker.getStep();
-//
-//        String status = scenario.getStatus().name();
-//
-//        if (status.equalsIgnoreCase("PASSED")) {
-//            logger.info("✅ Step Passed: " + stepName);
-//        } else if (status.equalsIgnoreCase("FAILED")) {
-//            logger.error("❌ Step Failed: " + stepName);
-//            logger.error("Reason: " + scenario.getStatus());
-//        }
-//        else {
-//            logger.warn("⚠ Step Status: " + status + " | Step: " + stepName);
-//        }
-//    }
+    @After
+    public void afterScenario() {
+        try {
+            System.out.println("Saving Word report for feature: " + featureName);
+            WordReportGenerator.saveReport();
+        } catch (IOException e) {
+            logger.error("Failed to save Word report: " + e.getMessage());
+        }
+        DriverManager.quitDriver();
+    }
+
     
 }
 

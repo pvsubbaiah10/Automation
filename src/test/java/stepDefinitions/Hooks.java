@@ -16,58 +16,68 @@ public class Hooks {
     private Logger logger;
     private String featureName;
 
- 
-//    // Close browser after every scenario
-//    @After
-//    public void afterScenario() {
-//        DriverManager.quitDriver();
-//    }
-    
-
+    /**
+     * Each scenario start అవ్వగానే:
+     * - feature file name తీసుకోటం
+     * - log initialize చేయటం
+     * - Word report initialize చేయటం
+     */
     @Before
     public void beforeScenario(Scenario scenario) {
+        // Get feature name from scenario URI
         String uri = scenario.getUri().toString();
         String[] parts = uri.split("/");
         featureName = parts[parts.length - 1].replace(".feature", "");
 
+        // Initialize logger
         LogHelper.setLogger(featureName);
         logger = LogHelper.getLogger(featureName);
         logger.info("<=== Starting Scenario: " + scenario.getName() + " ===>");
 
-        // Word report init for this feature
+        // Initialize Word report
         WordReportGenerator.init(featureName);
+        WordReportGenerator.setScenario(scenario.getName());  // set first scenario name
     }
 
+    /**
+     * ప్రతి step తరువాత:
+     * - step name get చేయటం
+     * - pass/fail status చూసి
+     * - screenshot తీసి
+     * - Word లో step entry add చేయటం
+     */
     @AfterStep
     public void afterStep(Scenario scenario) {
-        String stepText = StepTracker.getStep();
-        if (stepText == null) return;
+        String step = StepTracker.getStep();
+        if (step == null) return;
 
         String status = scenario.isFailed() ? "FAIL" : "PASS";
         String screenshotPath = null;
 
         try {
-            // Screenshot capture
             screenshotPath = ScreenshotUtil.captureScreenshot(featureName, scenario.getName());
         } catch (IOException e) {
             logger.error("Screenshot capture failed: " + e.getMessage());
         }
 
-        // Add step info to Word report
-        WordReportGenerator.addStep(stepText, status, screenshotPath);
+        // Re-set scenario name in case of new scenario
+        WordReportGenerator.setScenario(scenario.getName());
+        WordReportGenerator.addStep(step, status, screenshotPath);
     }
-    
+
+    /**
+     * ఒక్కో scenario తరువాత:
+     * - browser close
+     * - Word report save
+     */
     @After
     public void afterScenario() {
+        DriverManager.quitDriver();
+
         try {
-            System.out.println("Saving Word report for feature: " + featureName);
             WordReportGenerator.saveReport();
         } catch (IOException e) {
-            logger.error("Failed to save Word report: " + e.getMessage());
+            e.printStackTrace();
         }
-        DriverManager.quitDriver();
     }
-
-    
 }
-

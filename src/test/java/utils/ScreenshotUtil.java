@@ -15,15 +15,16 @@ public class ScreenshotUtil {
 
     public static String captureScreenshot(String featureName, String scenarioName) throws IOException {
         WebDriver driver = DriverManager.getDriver();
-
         if (driver == null) return null;
 
         TakesScreenshot ts = (TakesScreenshot) driver;
         File srcFile = ts.getScreenshotAs(OutputType.FILE);
 
-        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String timestamp = new SimpleDateFormat("HHmmss").format(new Date());
 
-        Path screenshotsDir = Paths.get("word report", "screenshots");
+        String dateFolder = WordReportGenerator.getDateFolder(featureName);
+        Path screenshotsDir = Paths.get("word report", dateFolder, "screenshots");
+
         if (!Files.exists(screenshotsDir)) {
             Files.createDirectories(screenshotsDir);
         }

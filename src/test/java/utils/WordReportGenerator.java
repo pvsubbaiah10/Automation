@@ -5,119 +5,131 @@ import org.apache.poi.xwpf.usermodel.*;
 
 import java.io.*;
 import java.nio.file.*;
-
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class WordReportGenerator {
 
-    private static XWPFDocument document;
-    private static String featureName;
-    private static Path reportPath;
+    private static final Map<String, XWPFDocument> docMap = new HashMap<>();
+    private static final Map<String, String> currentScenarioMap = new HashMap<>();
+    private static final Map<String, Integer> passCount = new HashMap<>();
+    private static final Map<String, Integer> failCount = new HashMap<>();
+    private static final Map<String, Path> fileMap = new HashMap<>();
+    private static final Map<String, String> dateFolderMap = new HashMap<>();
 
-    private static int totalSteps = 0;
-    private static int passedSteps = 0;
-    private static int failedSteps = 0;
+    public static void init(String featureName) {
+        if (!docMap.containsKey(featureName)) {
+            XWPFDocument doc = new XWPFDocument();
+            docMap.put(featureName, doc);
+            passCount.put(featureName, 0);
+            failCount.put(featureName, 0);
 
-    private static boolean isInitialized = false;
-
-    public static void init(String feature) {
-        featureName = feature;
-
-        try {
-            Path reportDir = Paths.get("word report");
-            if (!Files.exists(reportDir)) {
+            // Create date-wise folder
+            String dateFolder = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+            Path reportDir = Paths.get("word report", dateFolder);
+            try {
                 Files.createDirectories(reportDir);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
 
-            reportPath = reportDir.resolve(featureName + ".docx");
-
-            if (Files.exists(reportPath)) {
-                // Append to existing doc
-                FileInputStream fis = new FileInputStream(reportPath.toFile());
-                document = new XWPFDocument(fis);
-                fis.close();
-
-                // To calculate previous stats, optional: Could be implemented
-            } else {
-                document = new XWPFDocument();
-
-                // Add Title Heading
-                XWPFParagraph title = document.createParagraph();
-                title.setAlignment(ParagraphAlignment.CENTER);
-                XWPFRun run = title.createRun();
-                run.setText("Execution Report for Feature: " + featureName);
-                run.setBold(true);
-                run.setFontSize(16);
-            }
-
-            isInitialized = true;
-
-        } catch (IOException e) {
-            e.printStackTrace();
+            // Save report path in map
+            String timestamp = new SimpleDateFormat("HHmmss").format(new Date());
+            Path reportFile = reportDir.resolve(featureName + "_" + timestamp + ".docx");
+            fileMap.put(featureName, reportFile);
+            dateFolderMap.put(featureName, dateFolder);
         }
     }
 
-    public static void addStep(String stepText, String status, String screenshotPath) {
-        if (!isInitialized) return;
-
-        totalSteps++;
-
-        XWPFParagraph p = document.createParagraph();
-        XWPFRun run = p.createRun();
-        run.setText("Step " + totalSteps + ": " + stepText + " - [" + status + "]");
-        run.setFontSize(12);
-
-        if ("FAIL".equalsIgnoreCase(status)) {
-            failedSteps++;
-            run.setColor("FF0000");  // Red color for fail
-            run.setBold(true);
-        } else {
-            passedSteps++;
+    public static void setScenario(String scenarioName) {
+        for (String featureName : docMap.keySet()) {
+            currentScenarioMap.put(featureName, scenarioName);
         }
+    }
 
-        // Add screenshot if exists
-        if (screenshotPath != null && !screenshotPath.isEmpty()) {
-            try (InputStream pic = new FileInputStream(screenshotPath)) {
-                String filename = Paths.get(screenshotPath).getFileName().toString();
-                int format = filename.endsWith(".png") ? XWPFDocument.PICTURE_TYPE_PNG : XWPFDocument.PICTURE_TYPE_JPEG;
+    public static void addStep(String stepName, String status, String screenshotPath) {
+        for (Map.Entry<String, XWPFDocument> entry : docMap.entrySet()) {
+            String featureName = entry.getKey();
+            XWPFDocument doc = entry.getValue();
+            String scenarioName = currentScenarioMap.get(featureName);
 
-                // Add line break before picture
-                document.createParagraph().createRun().addBreak();
+            // Scenario Heading (only once)
+            if (!scenarioAlreadyLogged(doc, scenarioName)) {
+                XWPFParagraph scenarioPara = doc.createParagraph();
+                XWPFRun run = scenarioPara.createRun();
+                run.setBold(true);
+                run.setFontSize(14);
+                run.setText("Scenario: " + scenarioName);
+            }
 
-                XWPFParagraph picParagraph = document.createParagraph();
-                picParagraph.setAlignment(ParagraphAlignment.LEFT);
-                XWPFRun picRun = picParagraph.createRun();
-                picRun.addPicture(pic, format, filename, Units.toEMU(400), Units.toEMU(200)); // width, height in EMUs
+            // Step
+            XWPFParagraph stepPara = doc.createParagraph();
+            XWPFRun stepRun = stepPara.createRun();
+            stepRun.setBold(true);
+            stepRun.setText("Step: " + stepName + " - " + status);
+            if (status.equalsIgnoreCase("PASS")) {
+                stepRun.setColor("008000"); // Green
+                passCount.put(featureName, passCount.get(featureName) + 1);
+            } else {
+                stepRun.setColor("FF0000"); // Red
+                failCount.put(featureName, failCount.get(featureName) + 1);
+            }
 
-                // Add line break after picture
-                picRun.addBreak();
-            } catch (Exception e) {
-                e.printStackTrace();
+            // Screenshot
+            if (screenshotPath != null && Files.exists(Paths.get(screenshotPath))) {
+                try (InputStream pic = new FileInputStream(screenshotPath)) {
+                    XWPFParagraph imgPara = doc.createParagraph();
+                    XWPFRun imgRun = imgPara.createRun();
+                    imgRun.addBreak();
+                    imgRun.addPicture(
+                            pic,
+                            XWPFDocument.PICTURE_TYPE_PNG,
+                            screenshotPath,
+                            Units.toEMU(450),
+                            Units.toEMU(300)
+                    );
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
+    }
+
+    private static boolean scenarioAlreadyLogged(XWPFDocument doc, String scenarioName) {
+        for (XWPFParagraph para : doc.getParagraphs()) {
+            if (para.getText() != null && para.getText().trim().equals("Scenario: " + scenarioName)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public static void saveReport() throws IOException {
-        if (!isInitialized) return;
+        for (Map.Entry<String, XWPFDocument> entry : docMap.entrySet()) {
+            String featureName = entry.getKey();
+            XWPFDocument doc = entry.getValue();
 
-        // Add summary at the end
-        XWPFParagraph summaryPara = document.createParagraph();
-        summaryPara.setSpacingBefore(500);
-        XWPFRun summaryRun = summaryPara.createRun();
-        summaryRun.addBreak();
-        summaryRun.setBold(true);
-        summaryRun.setFontSize(14);
-        summaryRun.setText("Summary:");
-        summaryRun.addBreak();
-        summaryRun.setText("Total Steps: " + totalSteps);
-        summaryRun.addBreak();
-        summaryRun.setText("Passed Steps: " + passedSteps);
-        summaryRun.addBreak();
-        summaryRun.setText("Failed Steps: " + failedSteps);
+            // Summary
+            XWPFParagraph summary = doc.createParagraph();
+            XWPFRun run = summary.createRun();
+            run.setBold(true);
+            run.setText("\nExecution Summary:");
+            run.addBreak();
+            run.setText("Total Steps: " + (passCount.get(featureName) + failCount.get(featureName)));
+            run.addBreak();
+            run.setText("Passed: " + passCount.get(featureName));
+            run.addBreak();
+            run.setText("Failed: " + failCount.get(featureName));
 
-        try (FileOutputStream fos = new FileOutputStream(reportPath.toFile())) {
-            document.write(fos);
+            // Save the file using pre-generated path
+            Path reportFile = fileMap.get(featureName);
+            try (FileOutputStream out = new FileOutputStream(reportFile.toFile())) {
+                doc.write(out);
+            }
         }
-        document.close();
-        isInitialized = false;
+    }
+
+    public static String getDateFolder(String featureName) {
+        return dateFolderMap.getOrDefault(featureName, new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
     }
 }

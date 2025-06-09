@@ -16,12 +16,7 @@ public class Hooks {
     private Logger logger;
     private String featureName;
 
-    /**
-     * Each scenario start అవ్వగానే:
-     * - feature file name తీసుకోటం
-     * - log initialize చేయటం
-     * - Word report initialize చేయటం
-     */
+  
     @Before
     public void beforeScenario(Scenario scenario) {
         // Get feature name from scenario URI
@@ -39,13 +34,6 @@ public class Hooks {
         WordReportGenerator.setScenario(scenario.getName());  // set first scenario name
     }
 
-    /**
-     * ప్రతి step తరువాత:
-     * - step name get చేయటం
-     * - pass/fail status చూసి
-     * - screenshot తీసి
-     * - Word లో step entry add చేయటం
-     */
     @AfterStep
     public void afterStep(Scenario scenario) {
         String step = StepTracker.getStep();
@@ -65,11 +53,6 @@ public class Hooks {
         WordReportGenerator.addStep(step, status, screenshotPath);
     }
 
-    /**
-     * ఒక్కో scenario తరువాత:
-     * - browser close
-     * - Word report save
-     */
     @After
     public void afterScenario() {
         DriverManager.quitDriver();

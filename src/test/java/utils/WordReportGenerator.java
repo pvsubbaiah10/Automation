@@ -16,6 +16,7 @@ public class WordReportGenerator {
     private static final Map<String, Integer> failCount = new HashMap<>();
     private static final Map<String, Path> fileMap = new HashMap<>();
     private static final Map<String, String> dateFolderMap = new HashMap<>();
+    private static final Map<String, Set<String>> scenarioTracker = new HashMap<>();
 
     public static void init(String featureName) {
         if (!docMap.containsKey(featureName)) {
@@ -23,9 +24,15 @@ public class WordReportGenerator {
             docMap.put(featureName, doc);
             passCount.put(featureName, 0);
             failCount.put(featureName, 0);
+            scenarioTracker.put(featureName, new HashSet<>());
 
-            // Create date-wise folder
-            String dateFolder = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+            // Use single Date object for consistent folder and timestamp
+            Date now = new Date();
+
+            // Date folder (one folder per execution)
+            String dateFolder = new SimpleDateFormat("yyyy-MM-dd").format(now);
+            dateFolderMap.put(featureName, dateFolder);
+
             Path reportDir = Paths.get("word report", dateFolder);
             try {
                 Files.createDirectories(reportDir);
@@ -33,11 +40,10 @@ public class WordReportGenerator {
                 e.printStackTrace();
             }
 
-            // Save report path in map
-            String timestamp = new SimpleDateFormat("HHmmss").format(new Date());
+            // Report file with time-based unique name
+            String timestamp = new SimpleDateFormat("hh-mm-ssa").format(now); // e.g., 09-27-PM
             Path reportFile = reportDir.resolve(featureName + "_" + timestamp + ".docx");
             fileMap.put(featureName, reportFile);
-            dateFolderMap.put(featureName, dateFolder);
         }
     }
 
@@ -53,13 +59,15 @@ public class WordReportGenerator {
             XWPFDocument doc = entry.getValue();
             String scenarioName = currentScenarioMap.get(featureName);
 
-            // Scenario Heading (only once)
-            if (!scenarioAlreadyLogged(doc, scenarioName)) {
+            // Check if scenario is already logged using scenarioTracker
+            Set<String> seenScenarios = scenarioTracker.get(featureName);
+            if (!seenScenarios.contains(scenarioName)) {
                 XWPFParagraph scenarioPara = doc.createParagraph();
                 XWPFRun run = scenarioPara.createRun();
                 run.setBold(true);
                 run.setFontSize(14);
                 run.setText("Scenario: " + scenarioName);
+                seenScenarios.add(scenarioName);
             }
 
             // Step
@@ -93,15 +101,6 @@ public class WordReportGenerator {
                 }
             }
         }
-    }
-
-    private static boolean scenarioAlreadyLogged(XWPFDocument doc, String scenarioName) {
-        for (XWPFParagraph para : doc.getParagraphs()) {
-            if (para.getText() != null && para.getText().trim().equals("Scenario: " + scenarioName)) {
-                return true;
-            }
-        }
-        return false;
     }
 
     public static void saveReport() throws IOException {

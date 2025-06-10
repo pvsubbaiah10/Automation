@@ -19,19 +19,16 @@ public class Hooks {
   
     @Before
     public void beforeScenario(Scenario scenario) {
-        // Get feature name from scenario URI
         String uri = scenario.getUri().toString();
         String[] parts = uri.split("/");
         featureName = parts[parts.length - 1].replace(".feature", "");
 
-        // Initialize logger
         LogHelper.setLogger(featureName);
         logger = LogHelper.getLogger(featureName);
         logger.info("<=== Starting Scenario: " + scenario.getName() + " ===>");
 
-        // Initialize Word report
         WordReportGenerator.init(featureName);
-        WordReportGenerator.setScenario(scenario.getName());  // set first scenario name
+        WordReportGenerator.setScenario(featureName, scenario.getName());
     }
 
     @AfterStep
@@ -48,10 +45,10 @@ public class Hooks {
             logger.error("Screenshot capture failed: " + e.getMessage());
         }
 
-        // Re-set scenario name in case of new scenario
-        WordReportGenerator.setScenario(scenario.getName());
-        WordReportGenerator.addStep(step, status, screenshotPath);
+        WordReportGenerator.setScenario(featureName, scenario.getName());
+        WordReportGenerator.addStep(featureName, step, status, screenshotPath);
     }
+
 
     @After
     public void afterScenario() {

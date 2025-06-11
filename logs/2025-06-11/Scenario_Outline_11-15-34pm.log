@@ -1,0 +1,96 @@
+[11:15:34 pm] [INFO] <=== Starting Scenario: Launch instagram ===>
+[11:15:38 pm] [INFO] Step [Passed]: Launch "instagram" WebPage
+[11:15:39 pm] [INFO] Step [Passed]: Enter UserName "subbu" into "Username1" textbox at "LoginPage" page
+[11:15:39 pm] [INFO] Step [Passed]: Enter Password "pass_a" into "Password2" textbox at "LoginPage" page
+[11:15:40 pm] [INFO] Step [Passed]: Click "login_button1" element at "LoginPage" page
+[11:15:41 pm] [DEBUG] Save core properties part
+[11:15:41 pm] [DEBUG] Save content types part
+[11:15:41 pm] [DEBUG] Save package relationships
+[11:15:41 pm] [DEBUG] Save part 'docProps/app.xml'
+[11:15:41 pm] [DEBUG] Save part 'docProps/core.xml'
+[11:15:41 pm] [DEBUG] Save part 'word/document.xml'
+[11:15:41 pm] [DEBUG] Save part 'word/media/image1.png'
+[11:15:41 pm] [DEBUG] Save part 'word/media/image2.png'
+[11:15:41 pm] [DEBUG] Save part 'word/media/image3.png'
+[11:15:41 pm] [DEBUG] Save part 'word/media/image4.png'
+[11:15:41 pm] [DEBUG] Save part 'word/settings.xml'
+[11:15:41 pm] [INFO] <=== Starting Scenario: Launch instagram ===>
+[11:15:45 pm] [INFO] Step [Passed]: Launch "instagram" WebPage
+[11:15:45 pm] [INFO] Step [Passed]: Enter UserName "arise" into "Username1" textbox at "LoginPage" page
+[11:15:46 pm] [INFO] Step [Passed]: Enter Password "pass_b" into "Password2" textbox at "LoginPage" page
+[11:15:46 pm] [INFO] Step [Passed]: Click "login_button1" element at "LoginPage" page
+[11:15:47 pm] [DEBUG] Save content types part
+[11:15:47 pm] [DEBUG] Save package relationships
+[11:15:47 pm] [DEBUG] Save part 'docProps/app.xml'
+[11:15:47 pm] [DEBUG] Save part 'docProps/core.xml'
+[11:15:47 pm] [DEBUG] Save part 'word/document.xml'
+[11:15:47 pm] [DEBUG] Save part 'word/media/image1.png'
+[11:15:47 pm] [DEBUG] Save part 'word/media/image2.png'
+[11:15:47 pm] [DEBUG] Save part 'word/media/image3.png'
+[11:15:47 pm] [DEBUG] Save part 'word/media/image4.png'
+[11:15:47 pm] [DEBUG] Save part 'word/media/image5.png'
+[11:15:47 pm] [DEBUG] Save part 'word/media/image6.png'
+[11:15:47 pm] [DEBUG] Save part 'word/media/image7.png'
+[11:15:47 pm] [DEBUG] Save part 'word/media/image8.png'
+[11:15:47 pm] [DEBUG] Save part 'word/settings.xml'
+[11:15:47 pm] [INFO] <=== Starting Scenario: Launch Automation_Practice_Url ===>
+[11:15:53 pm] [INFO] Step [Passed]: Launch "Automation_Practice_Url" WebPage
+[11:15:54 pm] [INFO] Step [Passed]: Enter UserName "username" into "Username" textbox at "LoginPage" page
+[11:15:54 pm] [INFO] Step [Passed]: Enter Password "password" into "Password" textbox at "LoginPage" page
+[11:15:56 pm] [INFO] Step [Passed]: Click "login_button" element at "LoginPage" page
+[11:15:58 pm] [DEBUG] Save core properties part
+[11:15:58 pm] [DEBUG] Save content types part
+[11:15:58 pm] [DEBUG] Save package relationships
+[11:15:58 pm] [DEBUG] Save part 'docProps/app.xml'
+[11:15:58 pm] [DEBUG] Save part 'docProps/core.xml'
+[11:15:58 pm] [DEBUG] Save part 'word/document.xml'
+[11:15:58 pm] [DEBUG] Save part 'word/media/image1.png'
+[11:15:58 pm] [DEBUG] Save part 'word/media/image2.png'
+[11:15:58 pm] [DEBUG] Save part 'word/media/image3.png'
+[11:15:58 pm] [DEBUG] Save part 'word/media/image4.png'
+[11:15:58 pm] [DEBUG] Save part 'word/settings.xml'
+[11:15:58 pm] [DEBUG] Save content types part
+[11:15:58 pm] [DEBUG] Save package relationships
+[11:15:58 pm] [DEBUG] Save part 'docProps/app.xml'
+[11:15:58 pm] [DEBUG] Save part 'docProps/core.xml'
+[11:15:58 pm] [DEBUG] Save part 'word/document.xml'
+[11:15:58 pm] [DEBUG] Save part 'word/media/image1.png'
+[11:15:58 pm] [DEBUG] Save part 'word/media/image2.png'
+[11:15:58 pm] [DEBUG] Save part 'word/media/image3.png'
+[11:15:58 pm] [DEBUG] Save part 'word/media/image4.png'
+[11:15:58 pm] [DEBUG] Save part 'word/media/image5.png'
+[11:15:58 pm] [DEBUG] Save part 'word/media/image6.png'
+[11:15:58 pm] [DEBUG] Save part 'word/media/image7.png'
+[11:15:58 pm] [DEBUG] Save part 'word/media/image8.png'
+[11:15:58 pm] [DEBUG] Save part 'word/settings.xml'
+[11:15:58 pm] [INFO] <=== Starting Scenario: Launch Automation_Practice_Url123 ===>
+[11:16:03 pm] [INFO] Step [Passed]: Launch "Automation_Practice_Url" WebPage
+[11:16:03 pm] [INFO] Step [Passed]: Enter UserName "username" into "Username" textbox at "LoginPage" page
+[11:16:03 pm] [INFO] Step [Passed]: Enter Password "password" into "Password" textbox at "LoginPage" page
+[11:16:06 pm] [INFO] Step [Passed]: Click "login_button" element at "LoginPage" page
+[11:16:07 pm] [DEBUG] Save content types part
+[11:16:07 pm] [DEBUG] Save package relationships
+[11:16:07 pm] [DEBUG] Save part 'docProps/app.xml'
+[11:16:07 pm] [DEBUG] Save part 'docProps/core.xml'
+[11:16:07 pm] [DEBUG] Save part 'word/document.xml'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image1.png'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image2.png'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image3.png'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image4.png'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image5.png'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image6.png'
+[11:16:07 pm] [DEBUG] Save part 'word/settings.xml'
+[11:16:07 pm] [DEBUG] Save content types part
+[11:16:07 pm] [DEBUG] Save package relationships
+[11:16:07 pm] [DEBUG] Save part 'docProps/app.xml'
+[11:16:07 pm] [DEBUG] Save part 'docProps/core.xml'
+[11:16:07 pm] [DEBUG] Save part 'word/document.xml'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image1.png'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image2.png'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image3.png'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image4.png'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image5.png'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image6.png'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image7.png'
+[11:16:07 pm] [DEBUG] Save part 'word/media/image8.png'
+[11:16:07 pm] [DEBUG] Save part 'word/settings.xml'

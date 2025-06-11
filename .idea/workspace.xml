@@ -5,7 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="2025-06-12">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2025-06-11/Scenario_Outline_11-15-34pm.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2025-06-11/Scenario_Outline_11-23-17pm.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2025-06-11/Test1_11-15-47pm.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2025-06-11/Test1_11-22-15pm.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Runners/TestNGRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/TestNGRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/Scenario_Outline_11-15-34pm.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/Scenario_Outline_11-23-18pm.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/Test1_11-15-47pm.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/Test1_11-22-15pm.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Scenario_Outline_Launch_instagram_231539.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Scenario_Outline_Launch_instagram_231540.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Scenario_Outline_Launch_instagram_231545.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Scenario_Outline_Launch_instagram_231546.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Scenario_Outline_Launch_instagram_232322.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Scenario_Outline_Launch_instagram_232323.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Scenario_Outline_Launch_instagram_232328.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Scenario_Outline_Launch_instagram_232329.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Test1_Launch_Automation_Practice_Url123_231603.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Test1_Launch_Automation_Practice_Url123_231606.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Test1_Launch_Automation_Practice_Url123_232236.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Test1_Launch_Automation_Practice_Url123_232237.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Test1_Launch_Automation_Practice_Url123_232238.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Test1_Launch_Automation_Practice_Url_231554.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Test1_Launch_Automation_Practice_Url_231556.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Test1_Launch_Automation_Practice_Url_232221.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Test1_Launch_Automation_Practice_Url_232222.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-06-11/screenshots/Test1_Launch_Automation_Practice_Url_232223.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,14 +131,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747549452432</updated>
-    </task>
-    <task id="LOCAL-00001" summary="second commit">
-      <option name="closed" value="true" />
-      <created>1747824000974</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1747824000974</updated>
     </task>
     <task id="LOCAL-00002" summary="third commit">
       <option name="closed" value="true" />
@@ -490,7 +516,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749665990931</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="2025-06-12">
+      <option name="closed" value="true" />
+      <created>1749666006022</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1749666006022</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

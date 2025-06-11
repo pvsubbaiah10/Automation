@@ -4,106 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="2025-06-11">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2025-06-10/Scenario_Outline_11-59-16pm.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2025-06-10/Test1_11-59-26pm.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/WordReportGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/WordReportGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Scenario_Outline.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Scenario_Outline.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/Scenario_Outline_11-59-17pm.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/Test1_11-59-26pm.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_223619.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_223620.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_223623.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_223624.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_231929.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_231933.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_231934.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_233008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_233009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_233012.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_233013.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_233110.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_233116.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_233117.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_234101.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_234106.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_234107.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_234625.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_234626.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_234629.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_234630.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_235250.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_235254.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_235255.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_235425.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_235429.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_235739.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_235743.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_235744.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_235919.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_235924.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_235925.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Scenario_Outline_Launch_instagram_235926.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_223637.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_223638.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_231951.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_231952.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_231955.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_233024.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_233025.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_233026.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_233132.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_233137.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_234123.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_234124.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_234643.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_234644.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_234646.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_235309.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_235310.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_235442.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_235444.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_235800.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_235801.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_235802.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_235942.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_235943.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url123_235947.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_223630.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_223631.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_231944.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_231947.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_233018.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_233020.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_233123.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_233124.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_233125.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_234116.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_234117.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_234634.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_234635.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_234638.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_235303.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_235304.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_235305.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_235434.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_235435.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_235436.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_235749.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_235750.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_235930.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-10/screenshots/Test1_Launch_Automation_Practice_Url_235931.png" beforeDir="false" />
-    </list>
+    <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="2025-06-11" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -555,7 +456,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749580331913</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="2025-06-11">
+      <option name="closed" value="true" />
+      <created>1749664511038</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1749664511039</updated>
+    </task>
+    <task id="LOCAL-00047" summary="2025-06-11">
+      <option name="closed" value="true" />
+      <created>1749664516388</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1749664516388</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -8,15 +8,16 @@ import utils.StepTracker;
 import utils.WordReportGenerator;
 
 import java.io.IOException;
-
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 import org.apache.logging.log4j.Logger;
 
 public class Hooks {
 
     private Logger logger;
     private String featureName;
+    private static final ConcurrentHashMap<String, AtomicInteger> scenarioCounter = new ConcurrentHashMap<>();
 
-  
     @Before
     public void beforeScenario(Scenario scenario) {
         String uri = scenario.getUri().toString();
@@ -29,6 +30,9 @@ public class Hooks {
 
         WordReportGenerator.init(featureName);
         WordReportGenerator.setScenario(featureName, scenario.getName());
+
+        scenarioCounter.putIfAbsent(featureName, new AtomicInteger(0));
+        scenarioCounter.get(featureName).incrementAndGet();
     }
 
     @AfterStep
@@ -49,15 +53,18 @@ public class Hooks {
         WordReportGenerator.addStep(featureName, step, status, screenshotPath);
     }
 
-
     @After
-    public void afterScenario() {
+    public void afterScenario(Scenario scenario) {
         DriverManager.quitDriver();
 
-        try {
-            WordReportGenerator.saveReport();
-        } catch (IOException e) {
-            e.printStackTrace();
+        int remaining = scenarioCounter.get(featureName).decrementAndGet();
+        if (remaining == 0) {
+            WordReportGenerator.addSummary(featureName);
+            try {
+                WordReportGenerator.saveReport();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

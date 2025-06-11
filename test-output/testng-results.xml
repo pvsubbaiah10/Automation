@@ -1,55 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-10T23:59:16 IST" name="Default suite" finished-at="2025-06-10T23:59:49 IST" duration-ms="33025">
+  <suite started-at="2025-06-11T23:13:31 IST" name="Default suite" finished-at="2025-06-11T23:14:04 IST" duration-ms="32198">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestNGRunner@55b0dcab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestNGRunner@55141def]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-06-10T23:59:16 IST" name="Default test" finished-at="2025-06-10T23:59:49 IST" duration-ms="33025">
+    <test started-at="2025-06-11T23:13:31 IST" name="Default test" finished-at="2025-06-11T23:14:04 IST" duration-ms="32198">
       <class name="Runners.TestNGRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runners.TestNGRunner@55b0dcab]" started-at="2025-06-10T23:59:16 IST" name="setUpClass" finished-at="2025-06-10T23:59:16 IST" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runners.TestNGRunner@55141def]" started-at="2025-06-11T23:13:31 IST" name="setUpClass" finished-at="2025-06-11T23:13:32 IST" duration-ms="248" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3cd26422]]>
+                <![CDATA[org.testng.TestRunner@4f654cee]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestNGRunner@55b0dcab]" started-at="2025-06-10T23:59:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-10T23:59:21 IST" duration-ms="4928" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Launch instagram"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Test Scenario Outline"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[subb --->  not found in credentials.properties file.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: subb --->  not found in credentials.properties file.
-at utils.LoadProperties.pageClass_LoadPage(LoadProperties.java:103)
-at stepDefinitions.UserLoginPage.Enter_UserName(UserLoginPage.java:16)
-at ✽.the user enters UserName "subb" into the "Username1" textbox at the "LoginPage" page(file:///C:/Users/ASUS/IdeaProjects/MyAutomation/src/test/resources/features/Scenario_Outline.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestNGRunner@55b0dcab]" started-at="2025-06-10T23:59:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-10T23:59:26 IST" duration-ms="5369" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestNGRunner@55141def]" started-at="2025-06-11T23:13:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-11T23:13:39 IST" duration-ms="7650" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,7 +37,23 @@ at ✽.the user enters UserName "subb" into the "Username1" textbox at the "Logi
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestNGRunner@55b0dcab]" started-at="2025-06-10T23:59:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-10T23:59:33 IST" duration-ms="6708" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestNGRunner@55141def]" started-at="2025-06-11T23:13:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-11T23:13:45 IST" duration-ms="5588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Launch instagram"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Scenario Outline"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestNGRunner@55141def]" started-at="2025-06-11T23:13:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-11T23:13:55 IST" duration-ms="10088" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,7 +69,7 @@ at ✽.the user enters UserName "subb" into the "Username1" textbox at the "Logi
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestNGRunner@55b0dcab]" started-at="2025-06-10T23:59:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-10T23:59:49 IST" duration-ms="15726" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestNGRunner@55141def]" started-at="2025-06-11T23:13:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-11T23:14:04 IST" duration-ms="8566" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,7 +85,7 @@ at ✽.the user enters UserName "subb" into the "Username1" textbox at the "Logi
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runners.TestNGRunner@55b0dcab]" started-at="2025-06-10T23:59:49 IST" name="tearDownClass" finished-at="2025-06-10T23:59:49 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runners.TestNGRunner@55141def]" started-at="2025-06-11T23:14:04 IST" name="tearDownClass" finished-at="2025-06-11T23:14:04 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -12,5 +12,5 @@ And the user clicks the "login_button1" element at the "LoginPage" page
 
 Examples:
  | username1 | password1 |
- | subb      | pass_a    |
+ | subbu      | pass_a    |
  | arise     | pass_b    |

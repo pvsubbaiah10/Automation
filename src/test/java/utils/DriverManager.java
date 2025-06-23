@@ -10,7 +10,7 @@ public class DriverManager {
 
 	
 	
-	 private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>(); //Creates per-thread storage for WebDriver
+	 private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>(); // it Creates thread  for WebDriver
 
 
 	public static void initializeDriver(String browser, String url) {

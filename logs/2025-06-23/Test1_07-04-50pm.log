@@ -1,0 +1,67 @@
+[07:04:50 pm] [INFO] <=== Starting Scenario: Launch Automation_Practice_Url ===>
+[07:04:55 pm] [INFO] Step [Passed]: Launch "Automation_Practice_Url" WebPage
+[07:04:56 pm] [INFO] Step [Passed]: Enter UserName "username" into "Username" textbox at "LoginPage" page
+[07:04:56 pm] [INFO] Step [Passed]: Enter Password "password" into "Password" textbox at "LoginPage" page
+[07:04:59 pm] [INFO] Step [Passed]: Click "login_button" element at "LoginPage" page
+[07:05:01 pm] [DEBUG] Save core properties part
+[07:05:01 pm] [DEBUG] Save content types part
+[07:05:01 pm] [DEBUG] Save package relationships
+[07:05:01 pm] [DEBUG] Save part 'docProps/app.xml'
+[07:05:01 pm] [DEBUG] Save part 'docProps/core.xml'
+[07:05:01 pm] [DEBUG] Save part 'word/document.xml'
+[07:05:01 pm] [DEBUG] Save part 'word/media/image1.png'
+[07:05:01 pm] [DEBUG] Save part 'word/media/image2.png'
+[07:05:01 pm] [DEBUG] Save part 'word/media/image3.png'
+[07:05:01 pm] [DEBUG] Save part 'word/media/image4.png'
+[07:05:01 pm] [DEBUG] Save part 'word/settings.xml'
+[07:05:01 pm] [DEBUG] Save content types part
+[07:05:01 pm] [DEBUG] Save package relationships
+[07:05:01 pm] [DEBUG] Save part 'docProps/app.xml'
+[07:05:01 pm] [DEBUG] Save part 'docProps/core.xml'
+[07:05:01 pm] [DEBUG] Save part 'word/document.xml'
+[07:05:01 pm] [DEBUG] Save part 'word/media/image1.png'
+[07:05:01 pm] [DEBUG] Save part 'word/media/image2.png'
+[07:05:01 pm] [DEBUG] Save part 'word/media/image3.png'
+[07:05:01 pm] [DEBUG] Save part 'word/media/image4.png'
+[07:05:01 pm] [DEBUG] Save part 'word/media/image5.png'
+[07:05:01 pm] [DEBUG] Save part 'word/media/image6.png'
+[07:05:01 pm] [DEBUG] Save part 'word/media/image7.png'
+[07:05:01 pm] [DEBUG] Save part 'word/media/image8.png'
+[07:05:01 pm] [DEBUG] Save part 'word/settings.xml'
+[07:05:01 pm] [INFO] <=== Starting Scenario: Launch Automation_Practice_Url123 ===>
+[07:05:14 pm] [INFO] Step [Passed]: Launch "Automation_Practice_Url" WebPage
+[07:05:15 pm] [INFO] Step [Passed]: Enter UserName "username" into "Username" textbox at "LoginPage" page
+[07:05:15 pm] [INFO] Step [Passed]: Enter Password "password" into "Password" textbox at "LoginPage" page
+[07:05:17 pm] [INFO] Step [Passed]: Click "login_button" element at "LoginPage" page
+[07:05:18 pm] [DEBUG] Save content types part
+[07:05:18 pm] [DEBUG] Save package relationships
+[07:05:19 pm] [DEBUG] Save part 'docProps/app.xml'
+[07:05:19 pm] [DEBUG] Save part 'docProps/core.xml'
+[07:05:19 pm] [DEBUG] Save part 'word/document.xml'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image1.png'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image2.png'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image3.png'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image4.png'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image5.png'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image6.png'
+[07:05:19 pm] [DEBUG] Save part 'word/settings.xml'
+[07:05:19 pm] [DEBUG] Save content types part
+[07:05:19 pm] [DEBUG] Save package relationships
+[07:05:19 pm] [DEBUG] Save part 'docProps/app.xml'
+[07:05:19 pm] [DEBUG] Save part 'docProps/core.xml'
+[07:05:19 pm] [DEBUG] Save part 'word/document.xml'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image1.png'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image2.png'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image3.png'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image4.png'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image5.png'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image6.png'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image7.png'
+[07:05:19 pm] [DEBUG] Save part 'word/media/image8.png'
+[07:05:19 pm] [DEBUG] Save part 'word/settings.xml'
+[07:05:19 pm] [INFO] [TestNG] Time taken by org.testng.reporters.jq.Main@3a3ed300: 93 ms
+[07:05:19 pm] [INFO] [TestNG] Time taken by org.testng.reporters.FailedReporter@4eaa375c: 0 ms
+[07:05:19 pm] [INFO] [TestNG] Time taken by org.testng.reporters.XMLReporter@68dd39d2: 30 ms
+[07:05:19 pm] [INFO] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@73a0f2b: 7 ms
+[07:05:19 pm] [INFO] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@fb0a08c: 4 ms
+[07:05:19 pm] [INFO] [TestNG] Time taken by org.testng.internal.ExitCodeListener@1faf386c: 0 ms

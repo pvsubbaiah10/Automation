@@ -21,7 +21,6 @@ Feature: My first test
 
     And the user enters UserName "rahul_username" into the "r_username" textbox at the "LoginPage" page
     And the user enters Password "rahul_pass" into the "r_password" textbox at the "LoginPage" page
-    #And the user waits for "10" seconds
-    #Then the user completes the rest of the test manually
+
     And the user waits for the "r_sigin" element to be "VISIBLE" on the "LoginPage" page
     And the user clicks the "r_sigin" element at the "LoginPage" page

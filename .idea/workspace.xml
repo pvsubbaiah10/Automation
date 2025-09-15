@@ -5,74 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="2025-06-23">
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2025-06-12/Scenario_Outline_12-12-23am.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2025-06-12/Scenario_Outline_12-16-40am.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2025-06-12/Test1_12-12-36am.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2025-06-12/Test1_12-16-54am.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2025-06-23/Scenario_Outline_07-04-33pm.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2025-06-23/Test1_07-04-50pm.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/BaseTestNGRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/BaseTestNGRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/TestNGRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/TestNGRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/LaunchWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LaunchWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/UserLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/UserLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/EncryptUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/EncryptUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/LoadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/LoadProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/credentials.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/credentials.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/env.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/env.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/drivers/msedgedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/drivers/msedgedriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Test1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Test1.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.BaseTestNGRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.BaseTestNGRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/Scenario_Outline_12-12-24am.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/Scenario_Outline_12-16-41am.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/Test1_12-12-36am.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/Test1_12-16-54am.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Scenario_Outline_Launch_instagram_001228.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Scenario_Outline_Launch_instagram_001229.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Scenario_Outline_Launch_instagram_001234.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Scenario_Outline_Launch_instagram_001235.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Scenario_Outline_Launch_instagram_001645.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Scenario_Outline_Launch_instagram_001646.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Scenario_Outline_Launch_instagram_001652.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Test1_Launch_Automation_Practice_Url123_001254.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Test1_Launch_Automation_Practice_Url123_001255.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Test1_Launch_Automation_Practice_Url123_001256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Test1_Launch_Automation_Practice_Url123_001709.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Test1_Launch_Automation_Practice_Url123_001710.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Test1_Launch_Automation_Practice_Url_001243.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Test1_Launch_Automation_Practice_Url_001245.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Test1_Launch_Automation_Practice_Url_001701.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-12/screenshots/Test1_Launch_Automation_Practice_Url_001702.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/Scenario_Outline_07-04-34pm.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/Test1_07-04-50pm.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Scenario_Outline_Launch_instagram_190439.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Scenario_Outline_Launch_instagram_190440.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Scenario_Outline_Launch_instagram_190441.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Scenario_Outline_Launch_instagram_190442.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Scenario_Outline_Launch_instagram_190446.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Scenario_Outline_Launch_instagram_190447.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Scenario_Outline_Launch_instagram_190448.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Test1_Launch_Automation_Practice_Url123_190515.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Test1_Launch_Automation_Practice_Url123_190516.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Test1_Launch_Automation_Practice_Url123_190517.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Test1_Launch_Automation_Practice_Url_190455.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Test1_Launch_Automation_Practice_Url_190456.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Test1_Launch_Automation_Practice_Url_190457.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-06-23/screenshots/Test1_Launch_Automation_Practice_Url_190459.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,14 +97,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747549452432</updated>
-    </task>
-    <task id="LOCAL-00005" summary="from Intelij">
-      <option name="closed" value="true" />
-      <created>1748205250346</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1748205250346</updated>
     </task>
     <task id="LOCAL-00006" summary="from Intelij">
       <option name="closed" value="true" />
@@ -557,7 +482,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750686238753</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="2025-06-23">
+      <option name="closed" value="true" />
+      <created>1757944296995</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1757944296996</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -580,7 +513,8 @@
     <MESSAGE value="2025-06-11" />
     <MESSAGE value="2025-06-12" />
     <MESSAGE value="2025-06-23" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025-06-23" />
+    <MESSAGE value="2025-09-15" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025-09-15" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

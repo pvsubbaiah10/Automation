@@ -16,7 +16,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoadProperties {
 	
-	static WebDriver driver;
 	static String E_data ;
 	static String D_data ;
 	
@@ -110,14 +109,14 @@ public class LoadProperties {
 
 	           Class<?> cl = Class.forName(ClassName);
 	           Constructor<?> constructor = cl.getConstructor(WebDriver.class); 
-	           driver = DriverManager.getDriver();
+	           WebDriver driver = DriverManager.getDriver();
 	           Object pageObject = constructor.newInstance(driver);
 
 	           Field field = cl.getDeclaredField(textboxFieldName); 
 	           field.setAccessible(true); 
 	           By locator = (By) field.get(pageObject);
 
-	           //WebElement element = driver.findElement(locator); // you can use this with out wait.
+	           //WebElement element = driver.findElement(locator); // you can use this with out UserWaits.
 	           
 	           // Explicit Wait until element find.
 	           WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -147,6 +146,8 @@ public class LoadProperties {
 			Class<?> cl = Class.forName(ClassName);
 			
 			Constructor<?> constructor = cl.getConstructor(WebDriver.class);
+	        WebDriver driver = DriverManager.getDriver();
+
 			Object pageObject = constructor.newInstance(driver);
 			
 			Field field = cl.getDeclaredField(button);
@@ -156,8 +157,8 @@ public class LoadProperties {
 			
 			WebElement element = driver.findElement(locator);
 						
-//			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
-//	        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+//			WebDriverWait UserWaits = new WebDriverWait(driver, Duration.ofSeconds(1));
+//	        WebElement element = UserWaits.until(ExpectedConditions.elementToBeClickable(locator));
 	        
 			element.click();
 

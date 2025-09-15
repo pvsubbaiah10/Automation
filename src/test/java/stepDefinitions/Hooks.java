@@ -44,9 +44,14 @@ public class Hooks {
         String screenshotPath = null;
 
         try {
-            screenshotPath = ScreenshotUtil.captureScreenshot(featureName, scenario.getName());
-        } catch (IOException e) {
-            logger.error("Screenshot capture failed: " + e.getMessage());
+            
+            if (DriverManager.getDriver() != null) {
+                screenshotPath = ScreenshotUtil.captureScreenshot(featureName, scenario.getName());
+            } else {
+                logger.warn("Driver not available, skipping screenshot for step: " + step);
+            }
+        } catch (Exception e) {
+            logger.error("Screenshot capture skipped: " + e.getMessage());
         }
 
         WordReportGenerator.setScenario(featureName, scenario.getName());
@@ -55,9 +60,8 @@ public class Hooks {
 
     @After
     public void afterScenario(Scenario scenario) {
-        DriverManager.quitDriver();
-
         int remaining = scenarioCounter.get(featureName).decrementAndGet();
+
         if (remaining == 0) {
             WordReportGenerator.addSummary(featureName);
             try {
@@ -65,6 +69,10 @@ public class Hooks {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+
+        if (DriverManager.getDriver() != null) {
+            DriverManager.quitDriver();
         }
     }
 }

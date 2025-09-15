@@ -36,7 +36,7 @@ public class UserLoginPage {
 
 	@And("^the user clicks the \"([^\"]*)\" element at the \"([^\"]*)\" page$")
 	public void Click_button(String button, String pageClassName) {
-		String stepName = "Click \"" + button + "\" element at \"" + pageClassName + "\" page";
+		String stepName = "User click the \"" + button + "\" element at \"" + pageClassName + "\" page";
 		StepTracker.setStep(stepName);
 		try {
 			LoadProperties.pageClass_button(button, pageClassName);

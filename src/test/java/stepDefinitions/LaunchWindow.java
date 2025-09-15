@@ -1,8 +1,6 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import utils.DriverManager;
 import utils.LoadProperties;
 import utils.StepLogger;
 import utils.StepTracker;
@@ -26,19 +24,6 @@ public class LaunchWindow {
 		}
 	}
 
-	/* ************** Close the browser ************** */
-	@And("the user close the browser")
-	public void closeTheBrowser() {
-		String stepName = "Close browser session";
-		StepTracker.setStep(stepName);
 
-		try {
-			DriverManager.quitDriver();
-			StepLogger.logPass(stepName);
-		} catch (Exception e) {
-			StepLogger.logFail(stepName, e);
-			throw e;
-		}
-	}
 
 }

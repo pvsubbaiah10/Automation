@@ -1,0 +1,46 @@
+[07:17:07 pm] [INFO] <=== Starting Scenario: Launch Automation_Practice_Url ===>
+[07:17:12 pm] [INFO] Step [Passed]: Launch "Automation_Practice_Url" WebPage
+[07:17:12 pm] [INFO] Step [Passed]: Enter UserName "username" into "Username" textbox at "LoginPage" page
+[07:17:13 pm] [INFO] Step [Passed]: Enter Password "password" into "Password" textbox at "LoginPage" page
+[07:17:13 pm] [INFO] Step [Passed]: And the user waits for the "login_button" element to be "CLICKABLE" on the"LoginPage"page
+[07:17:14 pm] [INFO] Step [Passed]: User click the "login_button" element at "LoginPage" page
+[07:17:14 pm] [DEBUG] Save core properties part
+[07:17:14 pm] [DEBUG] Save content types part
+[07:17:14 pm] [DEBUG] Save package relationships
+[07:17:14 pm] [DEBUG] Save part 'docProps/app.xml'
+[07:17:14 pm] [DEBUG] Save part 'docProps/core.xml'
+[07:17:14 pm] [DEBUG] Save part 'word/document.xml'
+[07:17:14 pm] [DEBUG] Save part 'word/media/image1.png'
+[07:17:14 pm] [DEBUG] Save part 'word/media/image2.png'
+[07:17:14 pm] [DEBUG] Save part 'word/media/image3.png'
+[07:17:14 pm] [DEBUG] Save part 'word/media/image4.png'
+[07:17:14 pm] [DEBUG] Save part 'word/media/image5.png'
+[07:17:14 pm] [DEBUG] Save part 'word/settings.xml'
+[07:17:14 pm] [INFO] <=== Starting Scenario: Launch Automation_Practice_Url123 ===>
+[07:17:15 pm] [INFO] Step [Passed]: Launch "rahulshettyacademy" WebPage
+[07:17:16 pm] [INFO] Step [Passed]: Enter UserName "rahul_username" into "r_username" textbox at "LoginPage" page
+[07:17:16 pm] [INFO] Step [Passed]: Enter Password "rahul_pass" into "r_password" textbox at "LoginPage" page
+[07:17:17 pm] [INFO] Step [Passed]: And the user waits for the "r_sigin" element to be "VISIBLE" on the"LoginPage"page
+[07:17:17 pm] [INFO] Step [Passed]: User click the "r_sigin" element at "LoginPage" page
+[07:17:18 pm] [DEBUG] Save content types part
+[07:17:18 pm] [DEBUG] Save package relationships
+[07:17:18 pm] [DEBUG] Save part 'docProps/app.xml'
+[07:17:18 pm] [DEBUG] Save part 'docProps/core.xml'
+[07:17:18 pm] [DEBUG] Save part 'word/document.xml'
+[07:17:18 pm] [DEBUG] Save part 'word/media/image1.png'
+[07:17:18 pm] [DEBUG] Save part 'word/media/image2.png'
+[07:17:18 pm] [DEBUG] Save part 'word/media/image3.png'
+[07:17:18 pm] [DEBUG] Save part 'word/media/image4.png'
+[07:17:18 pm] [DEBUG] Save part 'word/media/image5.png'
+[07:17:18 pm] [DEBUG] Save part 'word/media/image6.png'
+[07:17:18 pm] [DEBUG] Save part 'word/media/image7.png'
+[07:17:18 pm] [DEBUG] Save part 'word/media/image8.png'
+[07:17:18 pm] [DEBUG] Save part 'word/media/image9.png'
+[07:17:18 pm] [DEBUG] Save part 'word/media/image10.png'
+[07:17:18 pm] [DEBUG] Save part 'word/settings.xml'
+[07:17:18 pm] [INFO] [TestNG] Time taken by org.testng.reporters.jq.Main@59a79443: 56 ms
+[07:17:18 pm] [INFO] [TestNG] Time taken by org.testng.reporters.FailedReporter@67531e3a: 0 ms
+[07:17:18 pm] [INFO] [TestNG] Time taken by org.testng.reporters.XMLReporter@ceddaf8: 11 ms
+[07:17:18 pm] [INFO] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@167381c7: 9 ms
+[07:17:18 pm] [INFO] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@77bc2e16: 6 ms
+[07:17:18 pm] [INFO] [TestNG] Time taken by org.testng.internal.ExitCodeListener@48e8c32a: 0 ms

@@ -40,8 +40,8 @@ public class EncryptUtils {
 	// you need to pass your credentials as arguments to Encode for secure your credentials
 	// don't forget after remove your valuable data in Encode after encoding.
 	public static void main(String[] args) throws Exception {
-		String encUsername = Encode("");
-		String encPassword = Encode("");
+		String encUsername = Encode("rahulshettyacademy ");
+		String encPassword = Encode("learning");
 
 		System.out.println("Encrypted Username: " + encUsername);
 		System.out.println("Length -- > " + encUsername.length());

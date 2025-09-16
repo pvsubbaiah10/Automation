@@ -1,0 +1,19 @@
+[11:48:19 pm] [INFO] <=== Starting Scenario: User bypasses SSL warning ===>
+[11:48:22 pm] [INFO] Step [Passed]: Launch "expired_page" WebPage
+[11:48:29 pm] [INFO] Step [Passed]: When the user clicks the Advanced option and clicks Proceed
+[11:48:30 pm] [INFO] Step [Passed]: And the user validate the page title with"expired.badssl.com"
+[11:48:30 pm] [DEBUG] Save core properties part
+[11:48:30 pm] [DEBUG] Save content types part
+[11:48:30 pm] [DEBUG] Save package relationships
+[11:48:30 pm] [DEBUG] Save part 'docProps/app.xml'
+[11:48:30 pm] [DEBUG] Save part 'docProps/core.xml'
+[11:48:30 pm] [DEBUG] Save part 'word/document.xml'
+[11:48:30 pm] [DEBUG] Save part 'word/media/image1.png'
+[11:48:30 pm] [DEBUG] Save part 'word/media/image2.png'
+[11:48:30 pm] [DEBUG] Save part 'word/settings.xml'
+[11:48:31 pm] [INFO] [TestNG] Time taken by org.testng.reporters.jq.Main@3ed34ef5: 52 ms
+[11:48:31 pm] [INFO] [TestNG] Time taken by org.testng.reporters.FailedReporter@370c1968: 10 ms
+[11:48:31 pm] [INFO] [TestNG] Time taken by org.testng.reporters.XMLReporter@43e065f2: 9 ms
+[11:48:31 pm] [INFO] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@5fbe155: 8 ms
+[11:48:31 pm] [INFO] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@1386313f: 5 ms
+[11:48:31 pm] [INFO] [TestNG] Time taken by org.testng.internal.ExitCodeListener@5e922647: 0 ms

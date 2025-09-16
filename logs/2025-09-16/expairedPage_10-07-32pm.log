@@ -1,0 +1,16 @@
+[10:07:32 pm] [INFO] <=== Starting Scenario: Launch expired_page ===>
+[10:07:34 pm] [INFO] Step [Passed]: Launch "expired_page" WebPage
+[10:07:34 pm] [DEBUG] Save core properties part
+[10:07:34 pm] [DEBUG] Save content types part
+[10:07:34 pm] [DEBUG] Save package relationships
+[10:07:34 pm] [DEBUG] Save part 'docProps/app.xml'
+[10:07:34 pm] [DEBUG] Save part 'docProps/core.xml'
+[10:07:34 pm] [DEBUG] Save part 'word/document.xml'
+[10:07:34 pm] [DEBUG] Save part 'word/media/image1.png'
+[10:07:34 pm] [DEBUG] Save part 'word/settings.xml'
+[10:07:35 pm] [INFO] [TestNG] Time taken by org.testng.reporters.jq.Main@54402c04: 54 ms
+[10:07:35 pm] [INFO] [TestNG] Time taken by org.testng.reporters.FailedReporter@3f1a4795: 1 ms
+[10:07:35 pm] [INFO] [TestNG] Time taken by org.testng.reporters.XMLReporter@5c83ae01: 8 ms
+[10:07:35 pm] [INFO] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@71e35c4: 6 ms
+[10:07:35 pm] [INFO] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@51d719bc: 5 ms
+[10:07:35 pm] [INFO] [TestNG] Time taken by org.testng.internal.ExitCodeListener@2d38edfd: 0 ms

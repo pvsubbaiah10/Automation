@@ -1,0 +1,14 @@
+[11:52:59 pm] [INFO] <=== Starting Scenario: User bypasses SSL warning ===>
+[11:53:01 pm] [INFO] Step [Passed]: Launch "expired_page" WebPage
+[11:53:03 pm] [INFO] Step [Passed]: When the user clicks the Advanced option and clicks Proceed
+[11:53:04 pm] [INFO] Step [Passed]: And the user validate the page title with"expired.badssl.com"
+[11:53:04 pm] [INFO] Step [Passed]: Then the user validate the page URL with"https://expired.badssl.com/"
+[11:53:04 pm] [DEBUG] Save core properties part
+[11:53:04 pm] [DEBUG] Save content types part
+[11:53:04 pm] [DEBUG] Save package relationships
+[11:53:04 pm] [DEBUG] Save part 'docProps/app.xml'
+[11:53:04 pm] [DEBUG] Save part 'docProps/core.xml'
+[11:53:04 pm] [DEBUG] Save part 'word/document.xml'
+[11:53:04 pm] [DEBUG] Save part 'word/media/image1.png'
+[11:53:04 pm] [DEBUG] Save part 'word/media/image2.png'
+[11:53:04 pm] [DEBUG] Save part 'word/settings.xml'

@@ -18,3 +18,12 @@
     
     Then the user completes the rest of the test manually
     
+    # *********** SSL ***********
+    When the user clicks the Advanced option and clicks Proceed
+    
+    # *********** page title validation ***********
+    And the user validate the page title with "expired.badssl.com"
+    Then the user validate the page URL with "https://expired.badssl.com/"
+    
+    # *********** SWITCH TO WINDOW & FRAMES ***********
+    

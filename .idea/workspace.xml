@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="2025-09-16">
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/TestNGRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/TestNGRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/CommonSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/CommonSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/PageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/PageActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/AllGherkins.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/AllGherkins.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config/env.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/env.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/drivers/msedgedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/drivers/msedgedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +68,7 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.Runner.executor": "Run",
@@ -65,7 +80,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "project.propCompiler"
+    "settings.editor.selected.configurable": "settings.sync"
   }
 }]]></component>
   <component name="RunManager">
@@ -98,22 +113,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747549452432</updated>
-    </task>
-    <task id="LOCAL-00008" summary="from Intelij">
-      <option name="closed" value="true" />
-      <created>1748208363392</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1748208363392</updated>
-    </task>
-    <task id="LOCAL-00009" summary="from Intelij">
-      <option name="closed" value="true" />
-      <created>1748339174271</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1748339174271</updated>
     </task>
     <task id="LOCAL-00010" summary="from Intelij">
       <option name="closed" value="true" />
@@ -491,7 +490,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758047470531</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="2025-09-16">
+      <option name="closed" value="true" />
+      <created>1758048716785</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1758048716785</updated>
+    </task>
+    <task id="LOCAL-00058" summary="2025-09-16">
+      <option name="closed" value="true" />
+      <created>1758048724311</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1758048724311</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -527,5 +542,13 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

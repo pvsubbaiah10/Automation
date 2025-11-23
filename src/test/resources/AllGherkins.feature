@@ -21,9 +21,22 @@
     # *********** SSL ***********
     When the user clicks the Advanced option and clicks Proceed
     
-    # *********** page title validation ***********
+    # *********** page title validation and Retrieved text ***********
     And the user validate the page title with "expired.badssl.com"
     Then the user validate the page URL with "https://expired.badssl.com/"
     
+    And the user Get the text from "text" in "WHPage" page
+    And the user Get the AttributeValue "id" from "inputField" in "WHPage" page
+    
+    
     # *********** SWITCH TO WINDOW & FRAMES ***********
+    
+     #  ---- Window Handles --- 
+     
+    Then the user switches to "parentwindow"
+    Then the user switches to "firstWindow"
+    
+    #   ---- Tabs ----
+    
+    
     

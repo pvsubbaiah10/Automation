@@ -1,0 +1,14 @@
+[12:19:41 am] [INFO] <=== Starting Scenario: User bypasses SSL warning ===>
+[12:19:45 am] [INFO] Step [Passed]: Launch "koenigsegg_page" WebPage
+[12:19:47 am] [INFO] Step [Passed]: When the user clicks the Advanced option and clicks Proceed
+[12:19:47 am] [INFO] Step [Passed]: And the user validate the page title with"Home - Koenigsegg"
+[12:19:48 am] [INFO] Step [Passed]: Then the user validate the page URL with"https://www.koenigsegg.com/home"
+[12:19:49 am] [DEBUG] Save core properties part
+[12:19:49 am] [DEBUG] Save content types part
+[12:19:49 am] [DEBUG] Save package relationships
+[12:19:49 am] [DEBUG] Save part 'docProps/app.xml'
+[12:19:49 am] [DEBUG] Save part 'docProps/core.xml'
+[12:19:49 am] [DEBUG] Save part 'word/document.xml'
+[12:19:49 am] [DEBUG] Save part 'word/media/image1.png'
+[12:19:49 am] [DEBUG] Save part 'word/media/image2.png'
+[12:19:49 am] [DEBUG] Save part 'word/settings.xml'

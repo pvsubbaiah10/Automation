@@ -1,0 +1,11 @@
+[04:41:56 am] [INFO] <=== Starting Scenario: check windowhandles ===>
+[04:42:02 am] [INFO] Step [Passed]: Launch "WindowHandlePage" WebPage
+[04:42:03 am] [INFO] Step [Passed]: User click the "Window_Button" element at "WHPage" page
+[04:42:03 am] [INFO] Step [Passed]: And the user validate the page title with"Window Handles Practice - H Y R Tutorials"
+[04:42:05 am] [INFO] Step [Passed]: Then the user switch to "firstWindow"
+[04:42:10 am] [INFO] Step [Passed]: And the user waits for "5" seconds 
+[04:42:10 am] [INFO] Step [Passed]: And the user validate the page title with"Basic Controls - H Y R Tutorials"
+[04:42:10 am] [INFO] Step [Passed]: Then the user switch to "parentwindow"
+[04:42:15 am] [INFO] Step [Passed]: And the user waits for "5" seconds 
+[04:42:16 am] [INFO] Step [Passed]: And the user validate the page title with"Window Handles Practice - H Y R Tutorials"
+[04:42:16 am] [INFO] Step [Passed]: User click the "Tab_Button" element at "WHPage" page

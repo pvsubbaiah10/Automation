@@ -1,0 +1,40 @@
+[12:29:59 am] [INFO] <=== Starting Scenario: Launch Automation_Practice_Url ===>
+[12:30:02 am] [INFO] Step [Passed]: Launch "Automation_Practice_Url" WebPage
+[12:30:03 am] [INFO] Step [Passed]: Enter UserName "username" into "Username" textbox at "LoginPage" page
+[12:30:03 am] [INFO] Step [Passed]: Enter Password "password" into "Password" textbox at "LoginPage" page
+[12:30:03 am] [INFO] Step [Passed]: And the user waits for the "login_button" element to be "CLICKABLE" on the"LoginPage"page
+[12:30:04 am] [INFO] Step [Passed]: User click the "login_button" element at "LoginPage" page
+[12:30:04 am] [DEBUG] Save core properties part
+[12:30:04 am] [DEBUG] Save content types part
+[12:30:04 am] [DEBUG] Save package relationships
+[12:30:04 am] [DEBUG] Save part 'docProps/app.xml'
+[12:30:04 am] [DEBUG] Save part 'docProps/core.xml'
+[12:30:04 am] [DEBUG] Save part 'word/document.xml'
+[12:30:04 am] [DEBUG] Save part 'word/media/image1.png'
+[12:30:04 am] [DEBUG] Save part 'word/media/image2.png'
+[12:30:04 am] [DEBUG] Save part 'word/media/image3.png'
+[12:30:04 am] [DEBUG] Save part 'word/media/image4.png'
+[12:30:04 am] [DEBUG] Save part 'word/media/image5.png'
+[12:30:04 am] [DEBUG] Save part 'word/settings.xml'
+[12:30:04 am] [INFO] <=== Starting Scenario: Launch Automation_Practice_Url123 ===>
+[12:30:05 am] [INFO] Step [Passed]: Launch "rahulshettyacademy" WebPage
+[12:30:06 am] [INFO] Step [Passed]: Enter UserName "rahul_username" into "r_username" textbox at "LoginPage" page
+[12:30:06 am] [INFO] Step [Passed]: Enter Password "rahul_pass" into "r_password" textbox at "LoginPage" page
+[12:30:07 am] [INFO] Step [Passed]: And the user waits for the "r_sigin" element to be "VISIBLE" on the"LoginPage"page
+[12:30:07 am] [INFO] Step [Passed]: User click the "r_sigin" element at "LoginPage" page
+[12:30:08 am] [DEBUG] Save content types part
+[12:30:08 am] [DEBUG] Save package relationships
+[12:30:08 am] [DEBUG] Save part 'docProps/app.xml'
+[12:30:08 am] [DEBUG] Save part 'docProps/core.xml'
+[12:30:08 am] [DEBUG] Save part 'word/document.xml'
+[12:30:08 am] [DEBUG] Save part 'word/media/image1.png'
+[12:30:08 am] [DEBUG] Save part 'word/media/image2.png'
+[12:30:08 am] [DEBUG] Save part 'word/media/image3.png'
+[12:30:08 am] [DEBUG] Save part 'word/media/image4.png'
+[12:30:08 am] [DEBUG] Save part 'word/media/image5.png'
+[12:30:08 am] [DEBUG] Save part 'word/media/image6.png'
+[12:30:08 am] [DEBUG] Save part 'word/media/image7.png'
+[12:30:08 am] [DEBUG] Save part 'word/media/image8.png'
+[12:30:08 am] [DEBUG] Save part 'word/media/image9.png'
+[12:30:08 am] [DEBUG] Save part 'word/media/image10.png'
+[12:30:08 am] [DEBUG] Save part 'word/settings.xml'

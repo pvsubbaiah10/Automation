@@ -1,0 +1,20 @@
+[12:15:56 am] [INFO] <=== Starting Scenario: User bypasses SSL warning ===>
+[12:16:03 am] [INFO] Step [Passed]: Launch "koenigsegg_page" WebPage
+[12:16:04 am] [INFO] Step [Passed]: When the user clicks the Advanced option and clicks Proceed
+[12:16:05 am] [INFO] Step [Passed]: And the user validate the page title with"Home - Koenigsegg"
+[12:16:06 am] [INFO] Step [Passed]: Then the user validate the page URL with"https://www.koenigsegg.com/home"
+[12:16:07 am] [DEBUG] Save core properties part
+[12:16:07 am] [DEBUG] Save content types part
+[12:16:07 am] [DEBUG] Save package relationships
+[12:16:07 am] [DEBUG] Save part 'docProps/app.xml'
+[12:16:07 am] [DEBUG] Save part 'docProps/core.xml'
+[12:16:07 am] [DEBUG] Save part 'word/document.xml'
+[12:16:07 am] [DEBUG] Save part 'word/media/image1.png'
+[12:16:07 am] [DEBUG] Save part 'word/media/image2.png'
+[12:16:07 am] [DEBUG] Save part 'word/settings.xml'
+[12:16:08 am] [INFO] [TestNG] Time taken by org.testng.reporters.jq.Main@1df1ced0: 82 ms
+[12:16:08 am] [INFO] [TestNG] Time taken by org.testng.reporters.FailedReporter@2aaf152b: 2 ms
+[12:16:08 am] [INFO] [TestNG] Time taken by org.testng.reporters.XMLReporter@34b9eb03: 11 ms
+[12:16:08 am] [INFO] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@78a0ff63: 10 ms
+[12:16:08 am] [INFO] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@7c2dfa2: 8 ms
+[12:16:08 am] [INFO] [TestNG] Time taken by org.testng.internal.ExitCodeListener@661d88a: 0 ms

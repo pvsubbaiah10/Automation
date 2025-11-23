@@ -1,0 +1,17 @@
+[02:39:25 am] [INFO] <=== Starting Scenario: check windowhandles ===>
+[02:39:30 am] [INFO] Step [Passed]: Launch "WindowHandlePage" WebPage
+[02:39:30 am] [INFO] Step [Passed]: User click the "Window_Button" element at "WHPage" page
+[02:39:31 am] [INFO] Step [Passed]: And the user validate the page title with"Window Handles Practice - H Y R Tutorials"
+[02:39:36 am] [INFO] Step [Passed]: And the user waits for "5" seconds 
+[02:39:36 am] [INFO] Step [Passed]: Then the user switch to "firstWindow"
+[02:39:36 am] [INFO] Step [Passed]: And the user validate the page title with"Basic Controls - H Y R Tutorials"
+[02:39:36 am] [DEBUG] Save core properties part
+[02:39:36 am] [DEBUG] Save content types part
+[02:39:36 am] [DEBUG] Save package relationships
+[02:39:36 am] [DEBUG] Save part 'docProps/app.xml'
+[02:39:36 am] [DEBUG] Save part 'docProps/core.xml'
+[02:39:36 am] [DEBUG] Save part 'word/document.xml'
+[02:39:36 am] [DEBUG] Save part 'word/media/image1.png'
+[02:39:36 am] [DEBUG] Save part 'word/media/image2.png'
+[02:39:36 am] [DEBUG] Save part 'word/media/image3.png'
+[02:39:36 am] [DEBUG] Save part 'word/settings.xml'

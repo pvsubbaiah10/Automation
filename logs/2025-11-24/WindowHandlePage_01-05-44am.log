@@ -1,0 +1,16 @@
+[01:05:44 am] [INFO] <=== Starting Scenario: check windowhandles ===>
+[01:05:51 am] [INFO] Step [Passed]: Launch "WindowHandlePage" WebPage
+[01:05:52 am] [DEBUG] Save core properties part
+[01:05:52 am] [DEBUG] Save content types part
+[01:05:52 am] [DEBUG] Save package relationships
+[01:05:52 am] [DEBUG] Save part 'docProps/app.xml'
+[01:05:52 am] [DEBUG] Save part 'docProps/core.xml'
+[01:05:52 am] [DEBUG] Save part 'word/document.xml'
+[01:05:52 am] [DEBUG] Save part 'word/media/image1.png'
+[01:05:53 am] [DEBUG] Save part 'word/settings.xml'
+[01:05:57 am] [INFO] [TestNG] Time taken by org.testng.reporters.jq.Main@4190bc8a: 146 ms
+[01:05:57 am] [INFO] [TestNG] Time taken by org.testng.reporters.FailedReporter@2d64c100: 3 ms
+[01:05:57 am] [INFO] [TestNG] Time taken by org.testng.reporters.XMLReporter@71e35c4: 45 ms
+[01:05:57 am] [INFO] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@625a4ff: 22 ms
+[01:05:57 am] [INFO] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@27755487: 14 ms
+[01:05:57 am] [INFO] [TestNG] Time taken by org.testng.internal.ExitCodeListener@4f0cab0a: 0 ms

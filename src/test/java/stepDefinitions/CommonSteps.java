@@ -38,6 +38,35 @@ public class CommonSteps {
 
 	    }
 	
+	    @And("^the user Get the text from \"([^\"]*)\" in \"([^\"]*)\" page$")
+	    public void get_text_from_element(String elementtext,String pageClassName ) {
+			String stepName = "And the user Get the text from\""+elementtext+"\" in \"" + pageClassName + "\" page";
+			StepTracker.setStep(stepName);
+
+			try {
+				PageActions.storeText(elementtext,pageClassName );
+				StepLogger.logPass(stepName);
+			} catch (Exception e) {
+				StepLogger.logFail(stepName, e);
+				throw e;
+			}
+	    	
+	    }
+	    
+	    @And("^the user Get the AttributeValue \"([^\"]*)\" from \"([^\"]*)\" in \"([^\"]*)\" page$")
+	    public void get_AttributeValue_from_element(String attributeName, String locatorName, String pageClassName ) {
+	        String stepName = "And the user Get the AttributeValue \"" + attributeName + "\" from \"" + locatorName + "\" in \"" + pageClassName + "\" page";
+	        StepTracker.setStep(stepName);
+
+	        try {
+	            PageActions.getAttributeValue(attributeName, locatorName, pageClassName);
+	            StepLogger.logPass(stepName);
+	        } catch (Exception e) {
+	            StepLogger.logFail(stepName, e);
+	            throw e;
+	        }
+	    }
+
 	    
 
 }

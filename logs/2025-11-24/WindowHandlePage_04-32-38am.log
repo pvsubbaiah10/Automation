@@ -1,0 +1,25 @@
+[04:32:38 am] [INFO] <=== Starting Scenario: check windowhandles ===>
+[04:32:43 am] [INFO] Step [Passed]: Launch "WindowHandlePage" WebPage
+[04:32:44 am] [INFO] Step [Passed]: User click the "Window_Button" element at "WHPage" page
+[04:32:44 am] [INFO] Step [Passed]: And the user validate the page title with"Window Handles Practice - H Y R Tutorials"
+[04:32:49 am] [INFO] Step [Passed]: And the user waits for "5" seconds 
+[04:32:49 am] [INFO] Step [Passed]: Then the user switch to "firstWindow"
+[04:32:50 am] [INFO] Step [Passed]: And the user validate the page title with"Basic Controls - H Y R Tutorials"
+[04:32:50 am] [INFO] Step [Passed]: Then the user switch to "parentwindow"
+[04:32:55 am] [INFO] Step [Passed]: And the user waits for "5" seconds 
+[04:32:55 am] [INFO] Step [Passed]: And the user validate the page title with"Window Handles Practice - H Y R Tutorials"
+[04:32:55 am] [INFO] Step [Passed]: User click the "Tab_Button" element at "WHPage" page
+[04:32:55 am] [INFO] Step [Passed]: And the user Get the text from"text" in "WHPage" page
+[04:32:56 am] [INFO] Step [Passed]: And the user Get the AttributeValue "id" from "inputField" in "WHPage" page
+[04:32:56 am] [DEBUG] Save core properties part
+[04:32:56 am] [DEBUG] Save content types part
+[04:32:56 am] [DEBUG] Save package relationships
+[04:32:56 am] [DEBUG] Save part 'docProps/app.xml'
+[04:32:56 am] [DEBUG] Save part 'docProps/core.xml'
+[04:32:56 am] [DEBUG] Save part 'word/document.xml'
+[04:32:56 am] [DEBUG] Save part 'word/media/image1.png'
+[04:32:56 am] [DEBUG] Save part 'word/media/image2.png'
+[04:32:56 am] [DEBUG] Save part 'word/media/image3.png'
+[04:32:56 am] [DEBUG] Save part 'word/media/image4.png'
+[04:32:56 am] [DEBUG] Save part 'word/media/image5.png'
+[04:32:56 am] [DEBUG] Save part 'word/settings.xml'

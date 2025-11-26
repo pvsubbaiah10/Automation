@@ -1,0 +1,18 @@
+[04:53:40 am] [INFO] <=== Starting Scenario: check windowhandles ===>
+[04:53:52 am] [INFO] Step [Passed]: Launch "framesPage" WebPage
+[04:53:52 am] [INFO] Step [Passed]: And the user enters "subbu" into the "inputbox" textbox at the "WHPage" page
+[04:53:52 am] [INFO] Step [Passed]: And the user switches to frame "frame1" in "WHPage" page
+[04:53:53 am] [INFO] Step [Passed]: And the user switches to DefaultFrame
+[04:53:53 am] [INFO] Step [Passed]: And the user enters "ramya" into the "inputbox" textbox at the "WHPage" page
+[04:53:58 am] [INFO] Step [Passed]: And the user waits for "5" seconds 
+[04:53:58 am] [DEBUG] Save core properties part
+[04:53:58 am] [DEBUG] Save content types part
+[04:53:58 am] [DEBUG] Save package relationships
+[04:53:58 am] [DEBUG] Save part 'docProps/app.xml'
+[04:53:58 am] [DEBUG] Save part 'docProps/core.xml'
+[04:53:58 am] [DEBUG] Save part 'word/document.xml'
+[04:53:58 am] [DEBUG] Save part 'word/media/image1.png'
+[04:53:58 am] [DEBUG] Save part 'word/media/image2.png'
+[04:53:58 am] [DEBUG] Save part 'word/media/image3.png'
+[04:53:58 am] [DEBUG] Save part 'word/media/image4.png'
+[04:53:58 am] [DEBUG] Save part 'word/settings.xml'

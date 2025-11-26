@@ -44,9 +44,17 @@ public class Hooks {
         String screenshotPath = null;
 
         try {
-            
             if (DriverManager.getDriver() != null) {
-                screenshotPath = ScreenshotUtil.captureScreenshot(featureName, scenario.getName());
+
+                //  Skip screenshot if alert is present
+                try {
+                    DriverManager.getDriver().switchTo().alert();
+                    logger.info(" Alert detected — skipping screenshot for this step: " + step);
+                } catch (Exception noAlert) {
+                    // Alert not present → it will take screenshot
+                    screenshotPath = ScreenshotUtil.captureScreenshot(featureName, scenario.getName());
+                }
+
             } else {
                 logger.warn("Driver not available, skipping screenshot for step: " + step);
             }

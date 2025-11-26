@@ -1,0 +1,14 @@
+[03:18:20 pm] [INFO] <=== Starting Scenario: check windowhandles ===>
+[03:18:23 pm] [INFO] Step [Passed]: Launch "alertspage" WebPage
+[03:18:23 pm] [INFO] Step [Passed]: User click the "click" element at "WHPage" page
+[03:18:29 pm] [INFO] Step [Passed]: Then the user switches to alert and click OK button
+[03:18:29 pm] [DEBUG] Save core properties part
+[03:18:29 pm] [DEBUG] Save content types part
+[03:18:29 pm] [DEBUG] Save package relationships
+[03:18:29 pm] [DEBUG] Save part 'docProps/app.xml'
+[03:18:29 pm] [DEBUG] Save part 'docProps/core.xml'
+[03:18:29 pm] [DEBUG] Save part 'word/document.xml'
+[03:18:29 pm] [DEBUG] Save part 'word/media/image1.png'
+[03:18:29 pm] [DEBUG] Save part 'word/media/image2.png'
+[03:18:29 pm] [DEBUG] Save part 'word/media/image3.png'
+[03:18:29 pm] [DEBUG] Save part 'word/settings.xml'

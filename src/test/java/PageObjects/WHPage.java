@@ -20,6 +20,10 @@ public class WHPage {
 	
 	private By inputField = By.xpath("//*[@id=\"newTabBtn\"]");
 	
+	private By click = By.id("promptBox");
+	private By contact = By.xpath("//*[@id=\"nav\"]/li[3]/a");
+	
+	
 	
 
 }

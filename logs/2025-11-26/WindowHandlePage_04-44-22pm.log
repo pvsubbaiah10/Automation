@@ -1,0 +1,23 @@
+[04:44:22 pm] [INFO] <=== Starting Scenario: check windowhandles ===>
+[04:44:28 pm] [INFO] Step [Passed]: Launch "alertspage" WebPage
+[04:44:28 pm] [INFO] Step [Passed]: User click the "click" element at "WHPage" page
+[04:44:28 pm] [INFO]  Alert detected — skipping screenshot for this step: User click the "click" element at "WHPage" page
+[04:44:28 pm] [INFO] Step [Passed]: Then the user switches to alert and get text from alertbox
+[04:44:28 pm] [INFO]  Alert detected — skipping screenshot for this step: Then the user switches to alert and get text from alertbox
+[04:44:28 pm] [INFO] Step [Passed]: Then the user switches to alert and enter"SUBBU" into alert box
+[04:44:28 pm] [INFO]  Alert detected — skipping screenshot for this step: Then the user switches to alert and enter"SUBBU" into alert box
+[04:44:28 pm] [INFO] Step [Passed]: Then the user switches to alert and get text from alertbox
+[04:44:28 pm] [INFO]  Alert detected — skipping screenshot for this step: Then the user switches to alert and get text from alertbox
+[04:44:28 pm] [INFO] Step [Passed]: Then the user switches to alert and click OK button
+[04:44:28 pm] [INFO] Step [Passed]: And the user Get the text from"text" in "WHPage" page
+[04:44:31 pm] [INFO] Step [Passed]: And the user waits for "3" seconds 
+[04:44:32 pm] [DEBUG] Save core properties part
+[04:44:32 pm] [DEBUG] Save content types part
+[04:44:32 pm] [DEBUG] Save package relationships
+[04:44:32 pm] [DEBUG] Save part 'docProps/app.xml'
+[04:44:32 pm] [DEBUG] Save part 'docProps/core.xml'
+[04:44:32 pm] [DEBUG] Save part 'word/document.xml'
+[04:44:32 pm] [DEBUG] Save part 'word/media/image1.png'
+[04:44:32 pm] [DEBUG] Save part 'word/media/image2.png'
+[04:44:32 pm] [DEBUG] Save part 'word/media/image3.png'
+[04:44:32 pm] [DEBUG] Save part 'word/settings.xml'

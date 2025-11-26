@@ -1,0 +1,25 @@
+[04:14:50 pm] [INFO] <=== Starting Scenario: check windowhandles ===>
+[04:14:55 pm] [INFO] Step [Passed]: Launch "alertspage" WebPage
+[04:14:55 pm] [INFO] Step [Passed]: User click the "click" element at "WHPage" page
+[04:14:55 pm] [INFO]  Alert detected — skipping screenshot for this step: User click the "click" element at "WHPage" page
+[04:14:55 pm] [INFO] Step [Passed]: Then the user switches to alert and click OK button
+[04:14:55 pm] [INFO] Step [Passed]: User click the "click" element at "WHPage" page
+[04:14:55 pm] [INFO]  Alert detected — skipping screenshot for this step: User click the "click" element at "WHPage" page
+[04:14:55 pm] [INFO] Step [Passed]: Then the user switches to alert and get text from alertbox
+[04:14:55 pm] [INFO]  Alert detected — skipping screenshot for this step: Then the user switches to alert and get text from alertbox
+[04:14:55 pm] [INFO] Step [Passed]: Then the user switches to alert and click CANCEL button
+[04:14:56 pm] [DEBUG] Save core properties part
+[04:14:56 pm] [DEBUG] Save content types part
+[04:14:56 pm] [DEBUG] Save package relationships
+[04:14:56 pm] [DEBUG] Save part 'docProps/app.xml'
+[04:14:56 pm] [DEBUG] Save part 'docProps/core.xml'
+[04:14:56 pm] [DEBUG] Save part 'word/document.xml'
+[04:14:56 pm] [DEBUG] Save part 'word/media/image1.png'
+[04:14:56 pm] [DEBUG] Save part 'word/media/image2.png'
+[04:14:56 pm] [DEBUG] Save part 'word/settings.xml'
+[04:14:56 pm] [INFO] [TestNG] Time taken by org.testng.reporters.jq.Main@a22c4d8: 58 ms
+[04:14:56 pm] [INFO] [TestNG] Time taken by org.testng.reporters.FailedReporter@35e26d05: 1 ms
+[04:14:56 pm] [INFO] [TestNG] Time taken by org.testng.reporters.XMLReporter@532e27ab: 7 ms
+[04:14:56 pm] [INFO] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@6cd64b3f: 9 ms
+[04:14:56 pm] [INFO] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@1921994e: 0 ms
+[04:14:56 pm] [INFO] [TestNG] Time taken by org.testng.internal.ExitCodeListener@43c87306: 0 ms

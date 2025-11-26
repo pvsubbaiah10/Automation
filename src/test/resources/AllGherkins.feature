@@ -38,5 +38,22 @@
     
     #   ---- Tabs ----
     
+    And the user closes the current tab
+    
+    
+    #   ---- Alerts ----
+    Then the user switches to alert and click OK button
+    Then the user switches to alert and click CANCEL button
+    Then the user switches to alert and get text from alertbox
+    Then the user switches to alert and enter "RAMYA" into alert box
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     

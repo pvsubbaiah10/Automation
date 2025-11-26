@@ -1,0 +1,14 @@
+[04:03:51 pm] [INFO] <=== Starting Scenario: check windowhandles ===>
+[04:03:57 pm] [INFO] Step [Passed]: Launch "alertspage" WebPage
+[04:03:58 pm] [INFO] Step [Passed]: User click the "click" element at "WHPage" page
+[04:03:58 pm] [INFO] ⚠ Alert detected — skipping screenshot for this step: User click the "click" element at "WHPage" page
+[04:04:03 pm] [INFO] Step [Passed]: And the user waits for "5" seconds 
+[04:04:03 pm] [INFO] ⚠ Alert detected — skipping screenshot for this step: And the user waits for "5" seconds 
+[04:04:03 pm] [DEBUG] Save core properties part
+[04:04:03 pm] [DEBUG] Save content types part
+[04:04:03 pm] [DEBUG] Save package relationships
+[04:04:03 pm] [DEBUG] Save part 'docProps/app.xml'
+[04:04:03 pm] [DEBUG] Save part 'docProps/core.xml'
+[04:04:03 pm] [DEBUG] Save part 'word/document.xml'
+[04:04:03 pm] [DEBUG] Save part 'word/media/image1.png'
+[04:04:03 pm] [DEBUG] Save part 'word/settings.xml'

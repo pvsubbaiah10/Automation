@@ -1,0 +1,31 @@
+[01:58:31 pm] [INFO] <=== Starting Scenario: check windowhandles ===>
+[01:58:36 pm] [INFO] Step [Passed]: Launch "WindowHandlePage" WebPage
+[01:58:37 pm] [INFO] Step [Passed]: User click the "Tab_Button" element at "WHPage" page
+[01:58:40 pm] [INFO] Step [Passed]: Then the user switch to "firstWindow"
+[01:58:40 pm] [INFO] Step [Passed]: And the user validate the page title with"AlertsDemo - H Y R Tutorials"
+[01:58:40 pm] [INFO] Step [Passed]: User click the "click" element at "WHPage" page
+[01:58:40 pm] [ERROR] Screenshot capture skipped: unexpected alert open: {Alert text : I am an alert box!}
+  (Session info: MicrosoftEdge=142.0.3595.94): I am an alert box!
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [75fc62087edc73524a23847e61942443, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 23568, ms:edgeOptions: {debuggerAddress: localhost:49308}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Users\ASUS\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49308/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 75fc62087edc73524a23847e61942443
+[01:58:40 pm] [INFO] Step [Passed]: Then the user switch to "parentwindow"
+[01:58:45 pm] [INFO] Step [Passed]: User click the "contact" element at "WHPage" page
+[01:58:45 pm] [INFO] Step [Passed]: Then the user switch to "firstWindow"
+[01:58:45 pm] [DEBUG] Save core properties part
+[01:58:45 pm] [DEBUG] Save content types part
+[01:58:45 pm] [DEBUG] Save package relationships
+[01:58:45 pm] [DEBUG] Save part 'docProps/app.xml'
+[01:58:45 pm] [DEBUG] Save part 'docProps/core.xml'
+[01:58:45 pm] [DEBUG] Save part 'word/document.xml'
+[01:58:45 pm] [DEBUG] Save part 'word/media/image1.png'
+[01:58:45 pm] [DEBUG] Save part 'word/media/image2.png'
+[01:58:45 pm] [DEBUG] Save part 'word/media/image3.png'
+[01:58:45 pm] [DEBUG] Save part 'word/media/image4.png'
+[01:58:45 pm] [DEBUG] Save part 'word/media/image5.png'
+[01:58:45 pm] [DEBUG] Save part 'word/media/image6.png'
+[01:58:45 pm] [DEBUG] Save part 'word/media/image7.png'
+[01:58:45 pm] [DEBUG] Save part 'word/settings.xml'

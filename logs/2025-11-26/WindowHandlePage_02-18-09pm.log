@@ -1,0 +1,117 @@
+[02:18:09 pm] [INFO] <=== Starting Scenario: check windowhandles ===>
+[02:18:15 pm] [INFO] Step [Passed]: Launch "WindowHandlePage" WebPage
+[02:18:15 pm] [INFO] Step [Passed]: User click the "Tab_Button" element at "WHPage" page
+[02:18:18 pm] [INFO] Step [Passed]: Then the user switch to "firstWindow"
+[02:18:19 pm] [INFO] Step [Passed]: And the user validate the page title with"AlertsDemo - H Y R Tutorials"
+[02:18:19 pm] [INFO] Step [Passed]: User click the "click" element at "WHPage" page
+[02:18:19 pm] [ERROR] Screenshot capture skipped: unexpected alert open: {Alert text : I am an alert box!}
+  (Session info: MicrosoftEdge=142.0.3595.94): I am an alert box!
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f82be05de02cbad091662b47353999b6, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 2052, ms:edgeOptions: {debuggerAddress: localhost:56805}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Users\ASUS\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56805/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f82be05de02cbad091662b47353999b6
+[02:18:19 pm] [INFO] Step [Passed]: Then the user switch to "parentwindow"
+[02:18:25 pm] [INFO] Step [Passed]: User click the "contact" element at "WHPage" page
+[02:18:25 pm] [INFO] Step [Passed]: Then the user switch to "firstWindow"
+[02:18:26 pm] [ERROR] Step [Failed]: User click the "click" element at "WHPage" page
+[02:18:26 pm] [ERROR] { ERROR ---> }: Error: element click intercepted: Element <button id="alertBox" onclick="alertFunction()">...</button> is not clickable at point (229, 492). Other element would receive the click: <iframe id="aswift_7" name="aswift_7" style="min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251118/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271808&amp;client=ca-pub-2190203024692607&amp;fa=8&amp;ifi=8&amp;uci=a!8" data-google-container-id="a!8" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CLqAg6u3j5EDFU5UnQkd0LQ5AQ" data-load-complete="true"></iframe>
+  (Session info: MicrosoftEdge=142.0.3595.94)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f82be05de02cbad091662b47353999b6, clickElement {id=f.7B49B5278577929C5A6746FCCD467308.d.B16FEE6CA32333DF62050A2554207C24.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 2052, ms:edgeOptions: {debuggerAddress: localhost:56805}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Users\ASUS\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56805/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (f82be05de02cbad091662b47353999b6)] -> xpath: //*[@id="alertBox"]]
+Session ID: f82be05de02cbad091662b47353999b6
+java.lang.RuntimeException: Error: element click intercepted: Element <button id="alertBox" onclick="alertFunction()">...</button> is not clickable at point (229, 492). Other element would receive the click: <iframe id="aswift_7" name="aswift_7" style="min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251118/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271808&amp;client=ca-pub-2190203024692607&amp;fa=8&amp;ifi=8&amp;uci=a!8" data-google-container-id="a!8" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CLqAg6u3j5EDFU5UnQkd0LQ5AQ" data-load-complete="true"></iframe>
+  (Session info: MicrosoftEdge=142.0.3595.94)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f82be05de02cbad091662b47353999b6, clickElement {id=f.7B49B5278577929C5A6746FCCD467308.d.B16FEE6CA32333DF62050A2554207C24.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 2052, ms:edgeOptions: {debuggerAddress: localhost:56805}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Users\ASUS\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56805/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (f82be05de02cbad091662b47353999b6)] -> xpath: //*[@id="alertBox"]]
+Session ID: f82be05de02cbad091662b47353999b6
+	at utils.LoadProperties.pageClass_button(LoadProperties.java:166) ~[test-classes/:?]
+	at stepDefinitions.UserLoginPage.Click_button(UserLoginPage.java:42) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) [cucumber-java-7.22.1.jar:7.22.1]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) [cucumber-java-7.22.1.jar:7.22.1]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) [cucumber-java-7.22.1.jar:7.22.1]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) [cucumber-java-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:86) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107) [cucumber-core-7.22.1.jar:7.22.1]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) [?:?]
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235) [cucumber-core-7.22.1.jar:7.22.1]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:124) [?:?]
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89) [cucumber-core-7.22.1.jar:7.22.1]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215) [?:?]
+	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:200) [?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1693) [?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:147) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:588) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:574) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) [?:?]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) [?:?]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727) [?:?]
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78) [cucumber-core-7.22.1.jar:7.22.1]
+	at io.cucumber.core.cli.Main.run(Main.java:87) [cucumber-core-7.22.1.jar:7.22.1]
+	at cucumber.api.cli.Main.run(Main.java:30) [cucumber-core-7.22.1.jar:7.22.1]
+	at cucumber.api.cli.Main.main(Main.java:15) [cucumber-core-7.22.1.jar:7.22.1]
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="alertBox" onclick="alertFunction()">...</button> is not clickable at point (229, 492). Other element would receive the click: <iframe id="aswift_7" name="aswift_7" style="min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251118/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271808&amp;client=ca-pub-2190203024692607&amp;fa=8&amp;ifi=8&amp;uci=a!8" data-google-container-id="a!8" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CLqAg6u3j5EDFU5UnQkd0LQ5AQ" data-load-complete="true"></iframe>
+  (Session info: MicrosoftEdge=142.0.3595.94)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f82be05de02cbad091662b47353999b6, clickElement {id=f.7B49B5278577929C5A6746FCCD467308.d.B16FEE6CA32333DF62050A2554207C24.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 2052, ms:edgeOptions: {debuggerAddress: localhost:56805}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Users\ASUS\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56805/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (f82be05de02cbad091662b47353999b6)] -> xpath: //*[@id="alertBox"]]
+Session ID: f82be05de02cbad091662b47353999b6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.35.0.jar:?]
+	at utils.LoadProperties.pageClass_button(LoadProperties.java:163) ~[test-classes/:?]
+	... 44 more
+[02:18:27 pm] [DEBUG] Save core properties part
+[02:18:27 pm] [DEBUG] Save content types part
+[02:18:27 pm] [DEBUG] Save package relationships
+[02:18:27 pm] [DEBUG] Save part 'docProps/app.xml'
+[02:18:27 pm] [DEBUG] Save part 'docProps/core.xml'
+[02:18:27 pm] [DEBUG] Save part 'word/document.xml'
+[02:18:27 pm] [DEBUG] Save part 'word/media/image1.png'
+[02:18:27 pm] [DEBUG] Save part 'word/media/image2.png'
+[02:18:27 pm] [DEBUG] Save part 'word/media/image3.png'
+[02:18:27 pm] [DEBUG] Save part 'word/media/image4.png'
+[02:18:27 pm] [DEBUG] Save part 'word/media/image5.png'
+[02:18:27 pm] [DEBUG] Save part 'word/media/image6.png'
+[02:18:27 pm] [DEBUG] Save part 'word/settings.xml'

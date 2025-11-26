@@ -9,6 +9,7 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -169,6 +170,32 @@ public class LoadProperties {
 		
 	}
 	
+	public static void enterText(String text, String textboxFieldName, String pageClassName) throws IOException   {
+		
+	
+	       try {	          	    	  
+	           String ClassName = "PageObjects." + pageClassName;
 
+	           Class<?> cl = Class.forName(ClassName);
+	           Constructor<?> constructor = cl.getConstructor(WebDriver.class); 
+	           WebDriver driver = DriverManager.getDriver();
+	           Object pageObject = constructor.newInstance(driver);
+
+	           Field field = cl.getDeclaredField(textboxFieldName); 
+	           field.setAccessible(true); 
+	           By locator = (By) field.get(pageObject);
+
+	           WebElement element = driver.findElement(locator); // you can use this with out UserWaits.
+	          
+	           
+	           element.sendKeys(Keys.CONTROL + "a");
+	           element.sendKeys(Keys.DELETE);
+
+	           element.sendKeys(text); 
+	       } catch (Exception e) {
+	           throw new RuntimeException("Error: " + e.getMessage(), e);
+	       }
+	 }
+	
 
 }

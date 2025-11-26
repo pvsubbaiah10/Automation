@@ -47,6 +47,14 @@
     Then the user switches to alert and get text from alertbox
     Then the user switches to alert and enter "RAMYA" into alert box
     
+    #   ---- Frames ----
+    And the user switches to frame "frame1" in "WHPage" page 
+    And the user switches to DefaultFrame 
+    
+     #   ---- input box text ----
+     
+    And the user enters "subbu" into the "inputbox" textbox at the "WHPage" page 
+    
     
     
     

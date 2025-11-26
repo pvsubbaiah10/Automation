@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import utils.LoadProperties;
 import utils.PageActions;
 import utils.StepLogger;
 import utils.StepTracker;
@@ -67,6 +68,18 @@ public class CommonSteps {
 	        }
 	    }
 
-	    
+	    @And("^the user enters \"([^\"]*)\" into the \"([^\"]*)\" textbox at the \"([^\"]*)\" page$")
+	    public void user_enter_text(String text, String locatorName, String pageClassName ) throws Exception {
+	        String stepName = "And the user enters \"" + text + "\" into the \"" + locatorName + "\" textbox at the \"" + pageClassName + "\" page";
+	        StepTracker.setStep(stepName);
+
+	        try {
+	            LoadProperties.enterText(text, locatorName, pageClassName);
+	            StepLogger.logPass(stepName);
+	        } catch (Exception e) {
+	            StepLogger.logFail(stepName, e);
+	            throw e;
+	        }
+	    }  
 
 }

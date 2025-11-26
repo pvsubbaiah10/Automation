@@ -23,6 +23,14 @@ public class WHPage {
 	private By click = By.id("promptBox");
 	private By contact = By.xpath("//*[@id=\"nav\"]/li[3]/a");
 	
+	private By inputbox = By.xpath("//*[@id=\"name\"]");
+	
+	private By frame1 = By.id("frm1");
+	
+
+	
+	
+	
 	
 	
 

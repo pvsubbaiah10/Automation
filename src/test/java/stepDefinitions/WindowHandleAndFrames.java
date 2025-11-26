@@ -1,10 +1,9 @@
 package stepDefinitions;
 
-import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import utils.DriverManager;
+import utils.PageActions;
 import utils.StepLogger;
 import utils.StepTracker;
 import utils.WindowAndFrames;
@@ -100,4 +99,34 @@ public class WindowHandleAndFrames {
 	}
 
 
+	
+	
+	@And("^the user switches to frame \"([^\"]*)\" in \"([^\"]*)\" page$")
+	public void the_user_switches_to_frame_in_page(String frame, String pagename) {
+        String stepName = "And the user switches to frame \"" + frame + "\" in \"" + pagename + "\" page";
+        StepTracker.setStep(stepName);
+
+        try {
+        	WindowAndFrames.frame(frame, pagename);
+            StepLogger.logPass(stepName);
+        } catch (Exception e) {
+            StepLogger.logFail(stepName, e);
+            throw e;
+        }
+	}
+
+	@And("the user switches to DefaultFrame")
+	public void the_user_switches_to_default_frame() {
+		String stepName = "And the user switches to DefaultFrame";
+		StepTracker.setStep(stepName);
+		try {
+            WindowAndFrames.defaultframe();
+			StepLogger.logPass(stepName);
+		} catch (Exception e) {
+			StepLogger.logFail(stepName, e);
+			throw e;
+		}
+	}	
+	
+	
 }

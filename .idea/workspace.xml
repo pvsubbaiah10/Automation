@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="2025-11-26">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/WHPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/WHPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/CommonSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/CommonSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/WindowHandleAndFrames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/WindowHandleAndFrames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/LoadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/LoadProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/WindowAndFrames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/WindowAndFrames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/AllGherkins.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/AllGherkins.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/env.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/env.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/WindowHandlePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/WindowHandlePage.feature" afterDir="false" />
-    </list>
+    <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="2025-11-27" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,22 +97,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747549452432</updated>
-    </task>
-    <task id="LOCAL-00012" summary="from Intelij">
-      <option name="closed" value="true" />
-      <created>1748342848767</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1748342848767</updated>
-    </task>
-    <task id="LOCAL-00013" summary="from Intelij">
-      <option name="closed" value="true" />
-      <created>1748352841088</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1748352841088</updated>
     </task>
     <task id="LOCAL-00014" summary="from Intelij">
       <option name="closed" value="true" />
@@ -500,7 +474,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764157128832</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="2025-11-27">
+      <option name="closed" value="true" />
+      <created>1764200138056</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1764200138057</updated>
+    </task>
+    <task id="LOCAL-00062" summary="2025-11-27">
+      <option name="closed" value="true" />
+      <created>1764200156720</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1764200156720</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -527,7 +517,8 @@
     <MESSAGE value="2025-09-16" />
     <MESSAGE value="2025-01-24" />
     <MESSAGE value="2025-11-26" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025-11-26" />
+    <MESSAGE value="2025-11-27" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025-11-27" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

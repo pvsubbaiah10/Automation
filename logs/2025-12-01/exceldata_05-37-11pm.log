@@ -1,0 +1,43 @@
+[05:37:11 pm] [INFO] <=== Starting Scenario: Login with Excel based URL and Credentials ===>
+[05:37:11 pm] [DEBUG] Parsing relationship: /xl/_rels/workbook.xml.rels
+[05:37:11 pm] [DEBUG] Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[05:37:11 pm] [DEBUG] Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+[05:37:11 pm] [DEBUG] Parsing relationship: /_rels/.rels
+[05:37:11 pm] [DEBUG] using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[05:37:11 pm] [DEBUG] Parsing relationship: /xl/_rels/workbook.xml.rels
+[05:37:12 pm] [DEBUG] Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[05:37:12 pm] [DEBUG] Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+[05:37:12 pm] [DEBUG] Parsing relationship: /_rels/.rels
+[05:37:12 pm] [DEBUG] using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[05:37:12 pm] [DEBUG] Parsing relationship: /xl/_rels/workbook.xml.rels
+[05:37:12 pm] [DEBUG] Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[05:37:12 pm] [DEBUG] Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+[05:37:12 pm] [DEBUG] Parsing relationship: /_rels/.rels
+[05:37:12 pm] [DEBUG] using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[05:37:12 pm] [DEBUG] Using WebDriverManager 6.3.3
+[05:37:12 pm] [DEBUG] Resolution edge=142 in cache (valid until 17:49:02 01/12/2025 IST)
+[05:37:12 pm] [DEBUG] Resolution edge142=142.0.3595.94 in cache (valid until 14:06:14 02/12/2025 IST)
+[05:37:12 pm] [INFO] Using msedgedriver 142.0.3595.94 (resolved driver for Edge 142)
+[05:37:12 pm] [DEBUG] Driver msedgedriver 142.0.3595.94 found in cache
+[05:37:12 pm] [INFO] Exporting webdriver.edge.driver as C:\Users\ASUS\.cache\selenium\msedgedriver\win64\142.0.3595.94\msedgedriver.exe
+[05:37:14 pm] [INFO] Step [Passed]: And the web application URL is launched in a NewWindow
+[05:37:15 pm] [INFO] Step [Passed]: And the user waits for "1" seconds 
+[05:37:16 pm] [INFO] Step [Passed]: Enter UserName into the "Username" textbox at "LoginPage" page
+[05:37:16 pm] [INFO] Step [Passed]: Enter Password into the "Password" textbox at "LoginPage" page
+[05:37:16 pm] [DEBUG] Save core properties part
+[05:37:16 pm] [DEBUG] Save content types part
+[05:37:16 pm] [DEBUG] Save package relationships
+[05:37:16 pm] [DEBUG] Save part 'docProps/app.xml'
+[05:37:16 pm] [DEBUG] Save part 'docProps/core.xml'
+[05:37:16 pm] [DEBUG] Save part 'word/document.xml'
+[05:37:16 pm] [DEBUG] Save part 'word/media/image1.png'
+[05:37:16 pm] [DEBUG] Save part 'word/media/image2.png'
+[05:37:16 pm] [DEBUG] Save part 'word/media/image3.png'
+[05:37:17 pm] [DEBUG] Save part 'word/media/image4.png'
+[05:37:17 pm] [DEBUG] Save part 'word/settings.xml'
+[05:37:17 pm] [INFO] [TestNG] Time taken by org.testng.reporters.jq.Main@4a70d302: 40 ms
+[05:37:17 pm] [INFO] [TestNG] Time taken by org.testng.reporters.FailedReporter@6a3fbcb1: 1 ms
+[05:37:17 pm] [INFO] [TestNG] Time taken by org.testng.reporters.XMLReporter@3375ebd3: 6 ms
+[05:37:17 pm] [INFO] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@528c8c1: 4 ms
+[05:37:17 pm] [INFO] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@153cb763: 3 ms
+[05:37:17 pm] [INFO] [TestNG] Time taken by org.testng.internal.ExitCodeListener@2c3158e0: 0 ms

@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class DriverManager {
 
 	
@@ -16,10 +18,12 @@ public class DriverManager {
 	public static void initializeDriver(String browser, String url) {
 		if (driver.get() == null) {
 			if ("chrome".equalsIgnoreCase(browser)) {
-				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\src\\test\\resources\\\\drivers\\chromedriver.exe");
+				//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\src\\test\\resources\\\\drivers\\chromedriver.exe");
+				WebDriverManager.chromedriver().setup(); 
 				driver.set(new ChromeDriver()); //Assigns a new Chrome browser to the current thread
 			} else if("msedge".equalsIgnoreCase(browser)) {
-				System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\\\drivers\\msedgedriver.exe");
+				//System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\\\drivers\\msedgedriver.exe");
+				 WebDriverManager.edgedriver().setup(); 
 				driver.set(new EdgeDriver()); //Assigns a new Edge browser to the current thread
 			} else {
 	            throw new RuntimeException("Unsupported browser: " + browser);

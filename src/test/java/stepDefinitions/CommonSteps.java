@@ -82,4 +82,90 @@ public class CommonSteps {
 	        }
 	    }  
 
+	    
+		@And("^the user hovers over the \"([^\"]*)\" element at the \"([^\"]*)\" page$")
+		public void Hover_button(String button, String pageClassName) {
+			String stepName = "User hovers over the \"" + button + "\" element at \"" + pageClassName + "\" page";
+			StepTracker.setStep(stepName);
+			try {
+				LoadProperties.hover(button, pageClassName);
+				StepLogger.logPass(stepName);
+			} catch (Exception e) {
+				StepLogger.logFail(stepName, e);
+				throw e;
+			}
+		}
+		
+	    
+		@And("^the user hovers over \"([^\"]*)\" and clicks \"([^\"]*)\" at the \"([^\"]*)\" page$")
+		public void hover_and_click(String hoverField, String optionField, String pageClassName) {
+		   
+			String stepName = "User hovers over \"" + hoverField + "\" and clicks \"" + optionField + "\" at the \"" + pageClassName + "\" page";
+			StepTracker.setStep(stepName);
+			try {
+				LoadProperties.hoverAndClick(hoverField, optionField, pageClassName);
+				StepLogger.logPass(stepName);
+			} catch (Exception e) {
+				StepLogger.logFail(stepName, e);
+				throw e;
+			}
+		}
+		@And("^the user selects valuelndex \"([^\"]*)\" from the \"([^\"]*)\" dropdown at the \"([^\"]*)\" page$")
+		public void the_user_selects_valuelndex_from_the_dropdown_at_the_page(String  valuelndex, String webelemnt, String pageClassName) {
+			String stepName = "User selects valuelndex \""+valuelndex+"\" from the \""+webelemnt+"\" dropdown at the \""+pageClassName+"\" page";
+			StepTracker.setStep(stepName);
+			try {
+				LoadProperties.dropdownByValueIndex(Integer.parseInt(valuelndex), webelemnt, pageClassName);
+				StepLogger.logPass(stepName);
+			} catch (Exception e) {
+				StepLogger.logFail(stepName, e);
+				throw e;
+			
+		   }
+		}
+		@And("^the user selects value \"([^\"]*)\" from the \"([^\"]*)\" dropdown at the \"([^\"]*)\" page$")
+		public void the_user_selects_value_from_the_dropdown_at_the_page(String value, String webelemnt, String pageClassName) {
+			String stepName = "User selects value \""+value+"\" from the \""+webelemnt+"\" dropdown at the \""+pageClassName+"\" page";
+			StepTracker.setStep(stepName);
+			try {
+				LoadProperties.dropdownByValue(value, webelemnt, pageClassName);
+				StepLogger.logPass(stepName);
+			} catch (Exception e) {
+				StepLogger.logFail(stepName, e);
+				throw e;
+			
+		  }
+		}
+		@And("^the user clicks the \"([^\"]*)\" element \"([^\"]*)\" times on the \"([^\"]*)\" page$")
+		public void the_user_clicks_elemnt(String webelemnt, String value, String pageClassName) {
+			String stepName = "User clicks the \""+webelemnt+"\" element \""+value+"\" element \""+pageClassName+"\" page";
+			StepTracker.setStep(stepName);
+			try {
+				LoadProperties.multipleClicks(webelemnt, Integer.parseInt(value), pageClassName);
+				StepLogger.logPass(stepName);
+			} catch (Exception e) {
+				StepLogger.logFail(stepName, e);
+				throw e;
+			
+		  }
+		}	
+	   
+		
+		@And("^the user uploads file \"([^\"]*)\" into \"([^\"]*)\" in \"([^\"]*)\" page$")
+		public void upload_File(String filePath, String elementName, String pageClassName) throws Exception {
+			String stepName = "User uploads file \""+filePath+"\" into \""+elementName+"\" in \""+pageClassName+"\" page";
+			StepTracker.setStep(stepName);
+			try {
+				LoadProperties.uploadfiles(filePath, elementName, pageClassName);
+				StepLogger.logPass(stepName);
+			} catch (Exception e) {
+				StepLogger.logFail(stepName, e);
+				throw e;
+			
+		  }
+			
+		}
+
+
+
 }

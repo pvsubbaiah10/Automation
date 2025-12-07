@@ -2,10 +2,13 @@ package utils;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class PageActions {
@@ -53,11 +56,12 @@ public class PageActions {
 			
 			By locator = (By) field.get(pageObject);
 			
-			WebElement element = driver.findElement(locator);
-					
+			
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	        
 			String storingtext= element.getText();
-			System.out.println(" ***** Retrieved Element Text: [ \"" + storingtext+"\" ] *****");
+			System.out.println(" ***** Retrieved Element Text: [ \"" +storingtext+"\" ] *****");
 
 		}catch (Exception e) {
 			throw new RuntimeException("Error: " + e.getMessage(), e);
@@ -82,8 +86,11 @@ public class PageActions {
 	        locatorField.setAccessible(true);
 
 	        By locator = (By) locatorField.get(pageObject);
-
-	        WebElement element = driver.findElement(locator);
+	    	        
+			
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	        
 
 	        String value = element.getAttribute(attributeName);
 

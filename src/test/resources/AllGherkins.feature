@@ -68,6 +68,27 @@
     And the user enters "subbu" into the "inputbox" textbox at the "WHPage" page 
     
     
+    #   ---- Hovers ----
+    
+    And the user hovers over the "hover" element at the "LoginPage" page 
+    And the user hovers over "hover" and clicks "relod" at the "LoginPage" page
+    
+    #   ---- Dropdowns ----
+    
+    And the user selects valuelndex "3" from the "drop" dropdown at the "LoginPage" page
+    And the user selects value "AED" from the "drop" dropdown at the "LoginPage" page
+    And the user clicks the "adults" element "5" times on the "LoginPage" page
+    
+    #   ---- Uploading Files ----
+    
+    And the user uploads file "\\Downloads\\download.xlsx" into "Choosefile" in "WHPage" page
+    
+    
+    
+    
+    
+    
+    
     
     
     

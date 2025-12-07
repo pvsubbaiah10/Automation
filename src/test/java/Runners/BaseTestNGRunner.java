@@ -14,11 +14,11 @@ public class BaseTestNGRunner extends AbstractTestNGCucumberTests{
 	
 //  -----> If you want parallel execution you can uncomment this.
 	
-//    @Override
-//    @DataProvider(parallel = true)
-//    public Object[][] scenarios() {
-//        return super.scenarios(); // Enables parallel execution
-//    }
-//   
+    @Override
+    @DataProvider(parallel = false)
+    public Object[][] scenarios() {
+        return super.scenarios(); // Enables parallel execution
+    }
+
 
 }

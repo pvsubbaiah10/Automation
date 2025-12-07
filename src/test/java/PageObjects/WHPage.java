@@ -27,6 +27,14 @@ public class WHPage {
 	
 	private By frame1 = By.id("frm1");
 	
+	private By Choosefile = By.xpath("//*[@id=\"fileinput\"]");
+	
+	private By invisibletext = By.xpath("//*[@id=\"1\"]/div[1]/div[2]");
+	
+	private By Choose_button = By.xpath("//*[@id=\"fileinput\"]");
+	
+	
+	
 
 	
 	

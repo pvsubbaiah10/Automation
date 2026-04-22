@@ -1,0 +1,45 @@
+[11:53:21 pm] [INFO] <=== Starting Scenario: search product in amazon ===>
+[11:53:21 pm] [DEBUG] Parsing relationship: /xl/_rels/workbook.xml.rels
+[11:53:21 pm] [DEBUG] Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[11:53:21 pm] [DEBUG] Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+[11:53:21 pm] [DEBUG] Parsing relationship: /_rels/.rels
+[11:53:22 pm] [DEBUG] using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[11:53:22 pm] [DEBUG] Using WebDriverManager 6.3.3
+[11:53:22 pm] [DEBUG] Resolution edge=147 in cache (valid until 00:15:10 23/04/2026 IST)
+[11:53:22 pm] [DEBUG] Resolution edge147=147.0.3912.72 in cache (valid until 23:15:10 23/04/2026 IST)
+[11:53:22 pm] [INFO] Using msedgedriver 147.0.3912.72 (resolved driver for Edge 147)
+[11:53:22 pm] [DEBUG] Driver msedgedriver 147.0.3912.72 found in cache
+[11:53:22 pm] [INFO] Exporting webdriver.edge.driver as C:\Users\ASUS\.cache\selenium\msedgedriver\win64\147.0.3912.72\msedgedriver.exe
+[11:53:24 pm] [INFO] Step [Passed]: And the web application URL is launched in a NewWindow
+[11:53:26 pm] [INFO] Step [Passed]: And the user enters "Apple 17 pro max" into the "search_box" textbox at the "Amazon" page
+[11:53:28 pm] [INFO] Step [Passed]: User click the "search_button" element at "Amazon" page
+[11:53:28 pm] [INFO] Step [Passed]: User click the "addtocart" element at "Amazon" page
+[11:53:28 pm] [INFO] Step [Passed]: And the user enters "airpods pro 3" into the "search_box" textbox at the "Amazon" page
+[11:53:31 pm] [INFO] Step [Passed]: User click the "search_button" element at "Amazon" page
+[11:53:31 pm] [INFO] Step [Passed]: User click the "addtocart" element at "Amazon" page
+[11:53:33 pm] [INFO] Step [Passed]: User click the "addtocart_button" element at "Amazon" page
+[11:53:34 pm] [INFO] Step [Passed]: And the user Get the text from"airpods" in "Amazon" page
+[11:53:34 pm] [INFO] Step [Passed]: And the user Get the text from"iphone" in "Amazon" page
+[11:53:35 pm] [INFO] Step [Passed]: And the user waits for "1" seconds 
+[11:53:35 pm] [DEBUG] Save core properties part
+[11:53:35 pm] [DEBUG] Save content types part
+[11:53:35 pm] [DEBUG] Save package relationships
+[11:53:35 pm] [DEBUG] Save part 'docProps/app.xml'
+[11:53:35 pm] [DEBUG] Save part 'docProps/core.xml'
+[11:53:35 pm] [DEBUG] Save part 'word/document.xml'
+[11:53:35 pm] [DEBUG] Save part 'word/media/image1.png'
+[11:53:35 pm] [DEBUG] Save part 'word/media/image2.png'
+[11:53:35 pm] [DEBUG] Save part 'word/media/image3.png'
+[11:53:35 pm] [DEBUG] Save part 'word/media/image4.png'
+[11:53:35 pm] [DEBUG] Save part 'word/media/image5.png'
+[11:53:35 pm] [DEBUG] Save part 'word/media/image6.png'
+[11:53:35 pm] [DEBUG] Save part 'word/media/image7.png'
+[11:53:35 pm] [DEBUG] Save part 'word/media/image8.png'
+[11:53:35 pm] [DEBUG] Save part 'word/media/image9.png'
+[11:53:35 pm] [DEBUG] Save part 'word/settings.xml'
+[11:53:36 pm] [INFO] [TestNG] Time taken by org.testng.reporters.jq.Main@1e76afeb: 41 ms
+[11:53:36 pm] [INFO] [TestNG] Time taken by org.testng.reporters.FailedReporter@73f6e07: 0 ms
+[11:53:36 pm] [INFO] [TestNG] Time taken by org.testng.reporters.XMLReporter@191a0351: 5 ms
+[11:53:36 pm] [INFO] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@52a7928a: 4 ms
+[11:53:36 pm] [INFO] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@585513a8: 4 ms
+[11:53:36 pm] [INFO] [TestNG] Time taken by org.testng.internal.ExitCodeListener@7b18658a: 0 ms

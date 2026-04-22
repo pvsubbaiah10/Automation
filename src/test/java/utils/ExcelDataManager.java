@@ -20,14 +20,22 @@ public class ExcelDataManager {
 	
 	
 	public static void url(String weburl) throws IOException {
-		
-        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\config\\env.properties");
-        Properties prop = new Properties();
-        prop.load(fis);
-        
-        	String browser = prop.getProperty("browser");
-        	DriverManager.initializeDriver(browser, weburl);
-		
+
+	    FileInputStream fis = new FileInputStream(
+	        System.getProperty("user.dir") + "\\src\\test\\resources\\config\\env.properties");
+
+	    Properties prop = new Properties();
+	    prop.load(fis);
+
+	    String browser = System.getProperty("browser");
+
+	    if (browser == null || browser.isEmpty()) {
+	        browser = prop.getProperty("browser");
+	    }
+
+	    System.out.println("Launching Browser: " + browser);
+
+	    DriverManager.initializeDriver(browser, weburl);
 	}
 
 	

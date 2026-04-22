@@ -2,7 +2,7 @@ package Runners;
 
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(tags = "@upload or @drop")
+@CucumberOptions(tags = "@amazon")
 
 public class TestNGRunner extends BaseTestNGRunner {
 

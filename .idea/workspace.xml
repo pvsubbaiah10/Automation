@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="01-12-2025">
+    <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="07-12-2025">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2025-12-01/exceldata_05-37-11pm.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2025-12-07/dropdowns_05-46-39pm.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2025-12-07/uploadfiles_05-46-56pm.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/WHPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/WHPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runners/BaseTestNGRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/BaseTestNGRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Runners/TestNGRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runners/TestNGRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/CommonSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/CommonSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/LoadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/LoadProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/PageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/PageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/AllGherkins.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/AllGherkins.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ExcelDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ExcelDataManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/LoginData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/LoginData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/~$LoginData.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" afterDir="false" />
@@ -24,9 +21,20 @@
       <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Runners.TestNGRunner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-12-01/exceldata_05-37-11pm.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-12-01/screenshots/exceldata_Login_with_Excel_based_URL_and_Credentials_173714.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word report/2025-12-01/screenshots/exceldata_Login_with_Excel_based_URL_and_Credentials_173716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/dropdowns_05-46-39pm.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/screenshots/dropdowns_checking_dropdowns_174642.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/screenshots/dropdowns_checking_dropdowns_174643.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/screenshots/dropdowns_checking_dropdowns_174645.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/screenshots/dropdowns_checking_dropdowns_174648.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/screenshots/dropdowns_checking_dropdowns_174649.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/screenshots/dropdowns_checking_dropdowns_174652.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/screenshots/dropdowns_checking_dropdowns_174653.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/screenshots/dropdowns_checking_dropdowns_174656.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/screenshots/uploadfiles_checking_uploadfiles_174658.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/screenshots/uploadfiles_checking_uploadfiles_174703.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/screenshots/uploadfiles_checking_uploadfiles_174704.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/screenshots/uploadfiles_checking_uploadfiles_174706.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/word report/2025-12-07/uploadfiles_05-46-56pm.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +43,11 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/ASUS/IdeaProjects/MyAutomation" value="2xG1AKI1z0df6rVBY7kZkIiHGYG" />
+    </persistenceIdMap>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,27 +82,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.All Features in: MyAutomation.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.Runner.executor": "Run",
-    "TestNG.TestNGRunner.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ASUS/IdeaProjects/MyAutomation",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "settings.sync"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.All Features in: MyAutomation.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.Runner.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestNGRunner.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/IdeaProjects/MyAutomation&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Runner" type="TestNG" singleton="false" printAsyncStackTraceForExceptions="false">
       <module name="MyAutomation" />
@@ -120,14 +133,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747549452432</updated>
-    </task>
-    <task id="LOCAL-00016" summary="from Intelij">
-      <option name="closed" value="true" />
-      <created>1748353003525</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1748353003525</updated>
     </task>
     <task id="LOCAL-00017" summary="from Intelij">
       <option name="closed" value="true" />
@@ -513,7 +518,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764590914760</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="07-12-2025">
+      <option name="closed" value="true" />
+      <created>1765109913518</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1765109913519</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -542,7 +555,8 @@
     <MESSAGE value="2025-11-26" />
     <MESSAGE value="2025-11-27" />
     <MESSAGE value="01-12-2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="01-12-2025" />
+    <MESSAGE value="07-12-2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="07-12-2025" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

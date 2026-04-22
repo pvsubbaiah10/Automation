@@ -12,6 +12,9 @@ public class LoginPage {
 	        this.driver = driver;  
 	    }
 	  
+	  
+	
+	  
      private By Username = By.xpath("//*[@id=\"loginForm\"]/div[1]/div[1]/div/label/input");
      private By Password  = By.xpath("//*[@id=\"loginForm\"]/div[1]/div[2]/div/label/input");
 	

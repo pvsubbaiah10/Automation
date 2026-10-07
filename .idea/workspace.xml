@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="22-04-2026">
+    <list default="true" id="57fc191e-1c19-42ba-b83f-c57e405ae640" name="Changes" comment="02-10-2026">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/amazon.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/amazon.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BrokenLinks.executor": "Run",
+    "Application.ShadowDOM.executor": "Run",
     "Cucumber Java.All Features in: MyAutomation.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -76,6 +77,19 @@
   }
 }]]></component>
   <component name="RunManager">
+    <configuration name="ShadowDOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Runners.testP.ShadowDOM" />
+      <module name="MyAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Runners.testP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runner" type="TestNG" singleton="false" printAsyncStackTraceForExceptions="false">
       <module name="MyAutomation" />
       <shortenClasspath name="NONE" />
@@ -97,6 +111,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ShadowDOM" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -105,14 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747549452432</updated>
-    </task>
-    <task id="LOCAL-00018" summary="from Intelij">
-      <option name="closed" value="true" />
-      <created>1748353086507</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1748353086507</updated>
     </task>
     <task id="LOCAL-00019" summary="from Intelij">
       <option name="closed" value="true" />
@@ -498,7 +509,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776882354168</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="02-10-2026">
+      <option name="closed" value="true" />
+      <created>1790896209338</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1790896209338</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -529,7 +548,8 @@
     <MESSAGE value="01-12-2025" />
     <MESSAGE value="07-12-2025" />
     <MESSAGE value="22-04-2026" />
-    <option name="LAST_COMMIT_MESSAGE" value="22-04-2026" />
+    <MESSAGE value="02-10-2026" />
+    <option name="LAST_COMMIT_MESSAGE" value="02-10-2026" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
